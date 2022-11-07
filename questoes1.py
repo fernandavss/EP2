@@ -80,9 +80,9 @@ questoes = [
 	
 
 {'titulo': 'Quem é considerada a primeira pessoa programadora do mundo?!',
-	          'nivel': 'medio',
-	          'opcoes': {'A': 'Marie Curie', 'B': 'Alan Turing', 'C': 'Ada Lovelace', 'D': 'Edsger Dijkstra'},
-	          'correta': 'C'},
+'nivel': 'medio',
+'opcoes': {'A': 'Marie Curie', 'B': 'Alan Turing', 'C': 'Ada Lovelace', 'D': 'Edsger Dijkstra'},
+'correta': 'C'},
 	
 
 	         {'titulo': 'Qual destes números é primo?',
