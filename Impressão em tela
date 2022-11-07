@@ -11,3 +11,6 @@ print('Blz, {0}, você tem direito a {1}pular 3 vezes e a 2 ajudas{2}\nSuas opç
 input('Aperte ENTER para continuar...')
 
 input('Lá vem a primeira questão!\nVamos começar com questões de nivel {0}FÁCIL{1}!\nAperte ENTER para continuar...'.format('\033[0;35m','\033[m'))
+
+import questoes_prof
+import funcoes
