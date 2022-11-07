@@ -1,3 +1,13 @@
-print(''Eai!\nVocê está no Fortuna FeCami e vai ter a oportunidade de milhões! Responda às seguintes perguntas e concorra a um prêmio de 1 milhão de reais!!'')
+#Apresentação do jogo
 
-input('Qual o seu nome?:')
+print("Eai!\nVocê está no Fortuna FeCami e vai ter a oportunidade de milhões! Responda às seguintes perguntas e concorra a um prêmio de 1 milhão de reais!!")
+
+#Primeira interação
+
+nome_jogador = input('Qual o seu nome?:')
+
+print('Blz, {0}, você tem direito a pular 3 vezes e a 2 ajudas\nSuas opções de resposta são "A", "B", "C", "D", "ajuda", "pula" e "parar"\nNada além disso, ein..!'.format(nome_jogador))
+
+input('Aperte ENTER para continuar...')
+
+print('Lá vem a primeira questão!')
