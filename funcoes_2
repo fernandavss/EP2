@@ -1,4 +1,6 @@
-# Funções
+# Definindo as funções que serão usadas no programa
+
+
 # TRANSFORMA BASE DE QUESTÕES
 # recebe uma lista de questões e separa as questões por nível (acessada em um dicio)
 def transforma_base(questoes_lista):
@@ -108,28 +110,18 @@ def gera_ajuda(questao):
         a2 = questao['opcoes'][alternativa_2]
         return 'DICA:\nOpções certamente erradas: {0} | {1}'.format(a1,a2)
 
+# ALTERAÇÃO DE COR
 
+# Orientações de uso do format para variações de cor com ANSI:
 
-#Apresentação do jogo
+# style: {'0':'sem estilo', '1':'negrito', '4':'sublinhado', '7':'inverter fundo com tela'}
+# text: [30,37] = sequencia igual background
+# background: [40,47] = [branco,vermelho, amarelo, azul, azul, magenta, ciano, ciano, cinza]
 
-print("Eai!\nVocê está no Fortuna FeCami e vai ter a oportunidade de milhões! Responda às seguintes perguntas e concorra a um prêmio de 1 milhão de reais!!")
+#sequencia no format: \033[style;text;back m
 
-#Primeira interação
+#exemplo de código alterando cor:
 
-nome_jogador = input('Qual o seu nome?:')
+#print('{}Olá,Mundo{}, tudo bem,{} como anda?'.format('\033[1;34m','\033[1;37m', '\033[m'))
 
-print('Blz, {0}, você tem direito a {1}pular 3 vezes e a 2 ajudas{2}\nSuas opções de resposta são {3}"A", "B", "C", "D", "ajuda", "pula" e "parar".{4}\nNada além disso, ein..!'.format(nome_jogador,'\033[0;35m','\033[m','\033[1;36m','\033[m'))
-
-input('Aperte ENTER para continuar...')
-
-input('Lá vem a primeira questão!\nVamos começar com questões de nivel {0}FÁCIL{1}!\nAperte ENTER para continuar...'.format('\033[0;35m','\033[m'))
-
-from questoes_prof import questoes
-
-#Passo 1: Checando validade da lista de questões
-p_1 = valida_questoes(questoes)
-if p_1 == []:
-    #Separando-as por nível em um dicionário (t_1)
-    p_2 = transforma_base(questoes)
-    #
-
+# fim
