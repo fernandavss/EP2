@@ -2,17 +2,19 @@
 
 
 # TRANSFORMA BASE DE QUESTÕES
+# recebe uma lista de questões e separa as questões por nível (acessada em um dicio)
 def transforma_base(questoes_lista):
-    nivel_dicio = {}
+    questoes_por_nivel = {}
     for questao in questoes_lista:
         nivel = questao['nivel']
-        if nivel not in nivel_dicio:
-            nivel_dicio[nivel] = [questao]
+        if nivel not in questoes_por_nivel:
+            questoes_por_nivel[nivel] = [questao]
         else:
-            nivel_dicio[nivel].append(questao)
-    return nivel_dicio
+            questoes_por_nivel[nivel].append(questao)
+    return questoes_por_nivel
 
 #VALIDA UMA QUESTÃO
+#identifica erro numa questão
 def valida_questao(questao):
     dicio = {}
     
@@ -56,6 +58,7 @@ def valida_questao(questao):
     return dicio
 
 # VALIDA LISTA DE QUESTÕES
+# recebe uma lista de questões e retorna uma lista de erros encontrados
 def valida_questoes(questoes_lista):
     lista = []
     for quest in questoes_lista:
@@ -107,5 +110,18 @@ def gera_ajuda(questao):
         a2 = questao['opcoes'][alternativa_2]
         return 'DICA:\nOpções certamente erradas: {0} | {1}'.format(a1,a2)
 
+# ALTERAÇÃO DE COR
+
+# Orientações de uso do format para variações de cor com ANSI:
+
+# style: {'0':'sem estilo', '1':'negrito', '4':'sublinhado', '7':'inverter fundo com tela'}
+# text: [30,37] = sequencia igual background
+# background: [40,47] = [branco,vermelho, amarelo, azul, azul, magenta, ciano, ciano, cinza]
+
+#sequencia no format: \033[style;text;back m
+
+#exemplo de código alterando cor:
+
+#print('{}Olá,Mundo{}, tudo bem,{} como anda?'.format('\033[1;34m','\033[1;37m', '\033[m'))
 
 # fim
