@@ -223,10 +223,62 @@ questoes = [
 {'titulo': 'Quem foi Miguel Bakun?',
 'nivel': 'dificil',
 'opcoes': {'A': 'escritor', 'B': 'sociologo', 'C': 'pintor', 'D': 'ator'},
-'correta': 'C'}
+'correta': 'C'},
+
+#questoes feitas
+
+{'titulo': 'Qual dessas cores nao e secundaria?',
+'nivel': 'facil',
+'opcoes': {'A': 'amarelo', 'B': 'laranja', 'C': 'verde', 'D': 'roxo'},
+'correta': 'A'},
+
+{'titulo': 'Quanto estados o Brasil tem?',
+'nivel': 'facil',
+'opcoes': {'A': '25', 'B': '26', 'C': '27', 'D': '24'},
+'correta': 'B'},
+
+{'titulo': 'Qual o pais mais populoso?',
+'nivel': 'facil',
+'opcoes': {'A': 'Brasil', 'B': 'India', 'C': 'China', 'D': 'Russia'},
+'correta': 'C'},
+
+{'titulo': 'Quantos paises tem na africa?',
+'nivel': 'medio',
+'opcoes': {'A': '33', 'B': '61', 'C': '58', 'D': '54'},
+'correta': 'D'},
+
+{'titulo': 'Quantas ilhas existem?',
+'nivel': 'medio',
+'opcoes': {'A': '8975', 'B': '11295', 'C': '17883', 'D': '27823'},
+'correta': 'C'},
+
+{'titulo': 'O que é o zoroatrismo?',
+'nivel': 'medio',
+'opcoes': {'A': 'religiao', 'B': 'corrente filosofica', 'C': 'classificacao socologica', 'D': 'comportamento'},
+'correta': 'A'},
+
+{'titulo': 'Qual a cidade mais ao norte do Brasil?',
+'nivel': 'dificil',
+'opcoes': {'A': 'Oiapoque', 'B': 'Uiramuta', 'C': 'Chui', 'D': 'Santa Rosa'},
+'correta': 'B'},
+
+{'titulo': 'Qual a cidade mais ao sul do Brasil?',
+'nivel': 'dificil',
+'opcoes': {'A': 'Oiapoque', 'B': 'Uiramuta', 'C': 'Chui', 'D': 'Santa Rosa'},
+'correta': 'C'},
+
+
+{'titulo': 'Qual a cidade mais ao sul do mundo?',
+'nivel': 'dificil',
+'opcoes': {'A': 'Svalbard', 'B': 'Ushuaia', 'C': 'Puerto Williams', 'D': 'Hammerfest'},
+'correta': 'C'},
+
+
+{'titulo': 'Qual grau do ‘the lean’?',
+'nivel': 'dificil',
+'opcoes': {'A': '45', 'B': '90', 'C': '37', 'D': '48'},
+'correta': 'A'}
 ]
-
-
        
 
 
