@@ -1,0 +1,111 @@
+# Definindo as funções que serão usadas no programa
+
+
+# TRANSFORMA BASE DE QUESTÕES
+def transforma_base(questoes_lista):
+    nivel_dicio = {}
+    for questao in questoes_lista:
+        nivel = questao['nivel']
+        if nivel not in nivel_dicio:
+            nivel_dicio[nivel] = [questao]
+        else:
+            nivel_dicio[nivel].append(questao)
+    return nivel_dicio
+
+#VALIDA UMA QUESTÃO
+def valida_questao(questao):
+    dicio = {}
+    
+    chaves = ['titulo', 'nivel', 'opcoes', 'correta']
+    for key in chaves:
+        if key not in questao:
+            dicio[key] = 'nao_encontrado'
+    
+    if len(questao) != 4:
+        dicio['outro'] = 'numero_chaves_invalido'
+    
+    if 'titulo' in questao:
+        a = questao['titulo']
+        if a.strip() == '':
+            dicio['titulo'] = 'vazio'
+    
+    if 'nivel' in questao:
+        lista = ['facil', 'medio','dificil']
+        if questao['nivel'] not in lista:
+            dicio['nivel'] = 'valor_errado'
+    
+    lista_de_opcoes = ['A', 'B', 'C', 'D']
+    if 'opcoes' in questao:
+        if len(questao['opcoes']) != 4:
+            dicio['opcoes'] = 'tamanho_invalido'
+        else:
+            if lista_de_opcoes != list(questao['opcoes']):
+                dicio['opcoes'] = 'chave_invalida_ou_nao_encontrada'
+            else:
+                dicio_1 = {}
+                for e, i in questao['opcoes'].items():
+                    if i.strip() == '':
+                        dicio_1[e] = 'vazia'
+                if dicio_1 != {}:
+                    dicio['opcoes'] = dicio_1
+                
+    if 'correta' in questao:
+        if questao['correta'] not in lista_de_opcoes:
+            dicio['correta'] = 'valor_errado'
+    
+    return dicio
+
+# VALIDA LISTA DE QUESTÕES
+def valida_questoes(questoes_lista):
+    lista = []
+    for quest in questoes_lista:
+        a = valida_questao(quest)
+        lista.append(a)
+    return lista
+
+# SORTEIA UMA QUESTÃO
+import random
+
+def sorteia_questao(dicio_questoes, nivel):
+    questoes_do_nivel = dicio_questoes[nivel]
+    a = random.choice(questoes_do_nivel)
+    return a
+
+#SORTEIA UMA QUESTÃO INÉDITA
+def sorteia_questao_inedida(dicio_questoes, nivel, lista_sorteados):
+    q = sorteia_questao(dicio_questoes,nivel)
+    a = True
+    while a:
+        if q in lista_sorteados:
+            q = sorteia_questao(dicio_questoes,nivel)
+        else:
+            a = False
+    lista_sorteados.append(q)
+    return q
+
+#QUESTÃO PARA TEXTO
+
+def questao_para_texto(questao, id):
+    a = '----------------------------------------\nQUESTAO {0}\n\n{1}\n\nRESPOSTAS:\n{2}: {3}\n{4}: {5}\n{6}: {7}\n{8}: {9}\n'.format(id,questao['titulo'],list(questao['opcoes'])[0],questao['opcoes']['A'],list(questao['opcoes'])[1],questao['opcoes']['B'],list(questao['opcoes'])[2],questao['opcoes']['C'],list(questao['opcoes'])[3],questao['opcoes']['D'])
+    return a
+
+#GERA AJUDA EM UMA QUESTÃO
+def gera_ajuda(questao):
+    lista_de_opcoes = list(questao['opcoes'])
+    lista_de_opcoes.remove(questao['correta'])
+    vezes = random.randint(1,2)
+    if vezes == 1:
+        alternativa_1 = random.choice(lista_de_opcoes)
+        a1 = questao['opcoes'][alternativa_1]
+        return 'DICA:\nOpções certamente erradas: {0}'.format(a1)
+
+    elif vezes == 2:
+        alternativa_1 = random.choice(lista_de_opcoes)
+        a1 = questao['opcoes'][alternativa_1]
+        lista_de_opcoes.remove(alternativa_1)
+        alternativa_2 = random.choice(lista_de_opcoes)
+        a2 = questao['opcoes'][alternativa_2]
+        return 'DICA:\nOpções certamente erradas: {0} | {1}'.format(a1,a2)
+
+
+# fim
