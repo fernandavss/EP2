@@ -85,10 +85,10 @@ questoes = [
 'correta': 'C'},
 	
 
-	         {'titulo': 'Qual destes números é primo?',
-	          'nivel': 'medio',
-	          'opcoes': {'A': '259', 'B': '85', 'C': '49', 'D': '19'},
-	          'correta': 'D'},
+{'titulo': 'Qual destes números é primo?',
+'nivel': 'medio',
+'opcoes': {'A': '259', 'B': '85', 'C': '49', 'D': '19'},
+'correta': 'D'},
 	
 
 	         {'titulo': 'Na Conjectura de _______, escolhendo-se um número natural inicial n, onde n > 0, os seguintes critérios serão obedecidos: Se n for par o seu sucessor será a metade e se n for ímpar o seu sucessor será o triplo mais um, gerando então um novo número. Qual o nome da conjectura?',
