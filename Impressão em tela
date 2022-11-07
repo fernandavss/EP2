@@ -12,5 +12,6 @@ input('Aperte ENTER para continuar...')
 
 input('Lá vem a primeira questão!\nVamos começar com questões de nivel {0}FÁCIL{1}!\nAperte ENTER para continuar...'.format('\033[0;35m','\033[m'))
 
-import questoes_prof
-import funcoes
+from questoes_prof import questoes
+
+a = transforma_
