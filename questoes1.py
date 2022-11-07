@@ -159,7 +159,7 @@ questoes = [
 
 {'titulo': 'Qual o ponto de fusão do nitrogênio?',
 'nivel': 'dificil',
-	          'opcoes': {'A': '120º C', 'B': '15º C', 'C': '-210º C', 'D': '-180º C'},
+'opcoes': {'A': '120º C', 'B': '15º C', 'C': '-210º C', 'D': '-180º C'},
 	          'correta': 'C'},
 	         
 	         {'titulo': 'Quantos gols Pelé fez oficialmente?',
