@@ -91,74 +91,74 @@ questoes = [
 'correta': 'D'},
 	
 
-	         {'titulo': 'Na Conjectura de _______, escolhendo-se um número natural inicial n, onde n > 0, os seguintes critérios serão obedecidos: Se n for par o seu sucessor será a metade e se n for ímpar o seu sucessor será o triplo mais um, gerando então um novo número. Qual o nome da conjectura?',
-	          'nivel': 'medio',
-	          'opcoes': {'A': 'Collatz', 'B': 'Goldbach', 'C': 'Poincaré', 'D': 'Hodge'},
-	          'correta': 'A'},
+{'titulo': 'Na Conjectura de _______, escolhendo-se um número natural inicial n, onde n > 0, os seguintes critérios serão obedecidos: Se n for par o seu sucessor será a metade e se n for ímpar o seu sucessor será o triplo mais um, gerando então um novo número. Qual o nome da conjectura?',
+'nivel': 'medio',
+'opcoes': {'A': 'Collatz', 'B': 'Goldbach', 'C': 'Poincaré', 'D': 'Hodge'},
+'correta': 'A'},
 	
 
-	         {'titulo': 'Como faço para chamar o SAMU?',
-	          'nivel': 'medio',
-	          'opcoes': {'A': 'Ligue 101', 'B': 'Ligue 192', 'C': 'Ligue 109', 'D': 'Ligue 122'},
-	          'correta': 'B'},
+{'titulo': 'Como faço para chamar o SAMU?',
+'nivel': 'medio',
+'opcoes': {'A': 'Ligue 101', 'B': 'Ligue 192', 'C': 'Ligue 109', 'D': 'Ligue 122'},
+'correta': 'B'},
 	
 
-	         {'titulo': 'Qual a segunda pessoa mais seguida no Instagram?',
-	          'nivel': 'medio',
-	          'opcoes': {'A': 'Cristiano Ronaldo', 'B': 'Dwayne Johnson', 'C': 'Kim Kardashian', 'D': 'Kylie Jenner'},
-	          'correta': 'D'},
+{'titulo': 'Qual a segunda pessoa mais seguida no Instagram?',
+'nivel': 'medio',
+'opcoes': {'A': 'Cristiano Ronaldo', 'B': 'Dwayne Johnson', 'C': 'Kim Kardashian', 'D': 'Kylie Jenner'},
+'correta': 'D'},
 	
 
-	         {'titulo': 'Qual a pessoa mais seguida no Instagram?',
-	          'nivel': 'medio',
-	          'opcoes': {'A': 'Cristiano Ronaldo', 'B': 'Dwayne Johnson', 'C': 'Kim Kardashian', 'D': 'Lionel Messi'},
-	          'correta': 'A'},
+{'titulo': 'Qual a pessoa mais seguida no Instagram?',
+'nivel': 'medio',
+'opcoes': {'A': 'Cristiano Ronaldo', 'B': 'Dwayne Johnson', 'C': 'Kim Kardashian', 'D': 'Lionel Messi'},
+'correta': 'A'},
 	
 
-	         {'titulo': 'A reprodução dos seres vivos é um processo biológico através do qual os organismos geram descendência. Qual desta não é uma forma de reprodução assexuada?',
-	          'nivel': 'dificil',
-	          'opcoes': {'A': 'Autogamia', 'B': 'Esporulação', 'C': 'Partenogênese', 'D': 'Divisão binária'},
-	          'correta': 'A'},
+{'titulo': 'A reprodução dos seres vivos é um processo biológico através do qual os organismos geram descendência. Qual desta não é uma forma de reprodução assexuada?',
+'nivel': 'dificil',
+'opcoes': {'A': 'Autogamia', 'B': 'Esporulação', 'C': 'Partenogênese', 'D': 'Divisão binária'},
+'correta': 'A'},
 	
 
-	         {'titulo': 'Qual o resultado da operação 5 + 2 * 3 ^ 2, onde ^ representa potenciação?',
-	          'nivel': 'dificil',
-	          'opcoes': {'A': '441', 'B': '86', 'C': 'Nenhuma das outras respostas', 'D': '23'},
-	          'correta': 'D'},
+{'titulo': 'Qual o resultado da operação 5 + 2 * 3 ^ 2, onde ^ representa potenciação?',
+'nivel': 'dificil',
+'opcoes': {'A': '441', 'B': '86', 'C': 'Nenhuma das outras respostas', 'D': '23'},
+'correta': 'D'},
 	
 
-	         {'titulo': 'Quem é Oxóssi?!',
-	          'nivel': 'dificil',
-	          'opcoes': {'A': 'Rede de mercados', 'B': 'Tipo de poema Dissílabo', 'C': 'Divindade das religiões africanas', 'D': 'Trapper brasileiro'},
-	          'correta': 'C'},
+{'titulo': 'Quem é Oxóssi?!',
+'nivel': 'dificil',
+'opcoes': {'A': 'Rede de mercados', 'B': 'Tipo de poema Dissílabo', 'C': 'Divindade das religiões africanas', 'D': 'Trapper brasileiro'},
+'correta': 'C'},
 	
 
-	         {'titulo': 'Qual a altura do Cristo Redentor?',
-	          'nivel': 'dificil',
-	          'opcoes': {'A': 'entre 0 e 20 metros', 'B': 'Entre 21 e 40 metros', 'C': 'Entre 41 e 60 metros', 'D': 'Mais que 60 metros'},
-	          'correta': 'B'},
+{'titulo': 'Qual a altura do Cristo Redentor?',
+'nivel': 'dificil',
+'opcoes': {'A': 'entre 0 e 20 metros', 'B': 'Entre 21 e 40 metros', 'C': 'Entre 41 e 60 metros', 'D': 'Mais que 60 metros'},
+'correta': 'B'},
 	
 
-	         {'titulo': 'Em que ano faleceu Charles Babbage?',
-	          'nivel': 'dificil',
-	          'opcoes': {'A': '2022', 'B': '1791', 'C': '1935', 'D': '1871'},
-	          'correta': 'A'},
+{'titulo': 'Em que ano faleceu Charles Babbage?',
+'nivel': 'dificil',
+'opcoes': {'A': '2022', 'B': '1791', 'C': '1935', 'D': '1871'},
+'correta': 'A'},
 	
 
-	         {'titulo': 'Einstein foi Nobel de física em qual ano?',
-	          'nivel': 'dificil',
-	          'opcoes': {'A': '1906', 'B': '1905', 'C': '1920', 'D': '1921'},
-	          'correta': 'D'},
+{'titulo': 'Einstein foi Nobel de física em qual ano?',
+'nivel': 'dificil',
+'opcoes': {'A': '1906', 'B': '1905', 'C': '1920', 'D': '1921'},
+'correta': 'D'},
 	
 
-	         {'titulo': 'Qual o número atômico do nitrogênio?',
-	          'nivel': 'dificil',
-	          'opcoes': {'A': '9', 'B': '7', 'C': '6', 'D': '8'},
-	          'correta': 'B'},
+{'titulo': 'Qual o número atômico do nitrogênio?',
+'nivel': 'dificil',
+'opcoes': {'A': '9', 'B': '7', 'C': '6', 'D': '8'},
+'correta': 'B'},
 	
 
-	         {'titulo': 'Qual o ponto de fusão do nitrogênio?',
-	          'nivel': 'dificil',
+{'titulo': 'Qual o ponto de fusão do nitrogênio?',
+'nivel': 'dificil',
 	          'opcoes': {'A': '120º C', 'B': '15º C', 'C': '-210º C', 'D': '-180º C'},
 	          'correta': 'C'},
 	         
