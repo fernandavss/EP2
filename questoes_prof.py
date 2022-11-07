@@ -169,6 +169,66 @@ questoes = [
 {'titulo': 'O que é Necrose?',
 'nivel': 'dificil',
 'opcoes': {'A': 'Uma banda de Rock', 'B': 'Uma marca de luxo', 'C': 'Cidade Francesa', 'D': 'Morte de tecido orgânico'},
-'correta': 'D'}]
+'correta': 'D'},
+
+#questoes feitas
+
+{'titulo': 'Qual a data de nascimento de Leonardo Davinte?',
+'nivel': 'medio',
+'opcoes': {'A': '15/04', 'B': '08/12', 'C': '17/09', 'D': '30/01'},
+'correta': 'A'},
+
+{'titulo': 'Qual a cor do cavalo branco de Napoleão?',
+'nivel': 'medio',
+'opcoes': {'A': 'Branco', 'B': 'Preto', 'C': 'Marrom', 'D': 'Cinza'},
+'correta': 'C'},
+
+{'titulo': 'Quantos anos durou a guerra dos cem anos?',
+'nivel': 'medio',
+'opcoes': {'A': '100', 'B': '99', 'C': '101', 'D': '116'},
+'correta': 'D'},
+
+{'titulo': 'Qual cor não faz parte das cores primárias?',
+'nivel': 'facil',
+'opcoes': {'A': 'amarelo', 'B': 'azul', 'C': 'vermelho', 'D': 'roxo'},
+'correta': 'D'},
+
+{'titulo': 'Quem descobriu o Brasil?',
+'nivel': 'facil',
+'opcoes': {'A': 'José Amado', 'B': 'Pedro Alveres Cabral', 'C': 'Luiz Lacerda', 'D': 'Dom Pedro'},
+'correta': 'B'},
+
+{'titulo': 'Quantos pernas a centopeia não tem?',
+'nivel': 'facil',
+'opcoes': {'A': '300', 'B': '320', 'C': '100', 'D': '30'},
+'correta': 'C'},
+
+{'titulo': 'pior analfabeto para Bertold Brecht:',
+'nivel': 'dificil',
+'opcoes': {'A': 'analfabeto funcional', 'B': 'analfabeto politico', 'C': 'analfabeto digital', 'D': 'aquele que não reconhece a própria ignorancia'},
+'correta': 'B'},
+
+
+
+{'titulo': 'quantos tipos de obras Jose de Alencar escreveu?',
+'nivel': 'dificil',
+'opcoes': {'A': '5', 'B': '7', 'C': '4', 'D': '3'},
+'correta': 'C'},
+
+{'titulo': 'Qual o livro de Wislawa Zsymbroska?',
+'nivel': 'dificil',
+'opcoes': {'A': 'Ocaso do Seculo', 'B': 'Pessoas perdidas', 'C': 'O barco que salvou', 'D': 'nenhuma das anteriores'},
+'correta': 'A'},
+
+{'titulo': 'Quem foi Miguel Bakun?',
+'nivel': 'dificil',
+'opcoes': {'A': 'escritor', 'B': 'sociologo', 'C': 'pintor', 'D': 'ator'},
+'correta': 'C'}
+]
+
+
+       
+
+
 
 
