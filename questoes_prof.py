@@ -58,8 +58,6 @@ questoes = [
 'nivel': 'medio',
 'opcoes': {'A': '21', 'B': '11', 'C': '30', 'D': '10'},
 'correta': 'B'},
-]
-'''	
 
 {'titulo': 'Qual destas é uma pseudociência que estuda os corpos celestes e as prováveis relações que possuem com a vida das pessoas e os acontecimentos na Terra?',
 'nivel': 'medio',
@@ -160,18 +158,18 @@ questoes = [
 {'titulo': 'Qual o ponto de fusão do nitrogênio?',
 'nivel': 'dificil',
 'opcoes': {'A': '120º C', 'B': '15º C', 'C': '-210º C', 'D': '-180º C'},
-	          'correta': 'C'},
+'correta': 'C'},
 	         
-	         {'titulo': 'Quantos gols Pelé fez oficialmente?',
-	          'nivel': 'dificil',
-	          'opcoes': {'A': '815', 'B': '762', 'C': '1100', 'D': '1057'},
-	          'correta': 'B'},
+{'titulo': 'Quantos gols Pelé fez oficialmente?',
+'nivel': 'dificil',
+'opcoes': {'A': '815', 'B': '762', 'C': '1100', 'D': '1057'},
+'correta': 'B'},
 	
 
-	         {'titulo': 'O que é Necrose?',
-	          'nivel': 'dificil',
-	          'opcoes': {'A': 'Uma banda de Rock', 'B': 'Uma marca de luxo', 'C': 'Cidade Francesa', 'D': 'Morte de tecido orgânico'},
-	          'correta': 'D'},
+{'titulo': 'O que é Necrose?',
+'nivel': 'dificil',
+'opcoes': {'A': 'Uma banda de Rock', 'B': 'Uma marca de luxo', 'C': 'Cidade Francesa', 'D': 'Morte de tecido orgânico'},
+'correta': 'D'}
 ]
-'''
+
 
