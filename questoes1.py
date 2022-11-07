@@ -76,10 +76,10 @@ questoes = [
 {'titulo': 'Qual destas pessoas conduziu importantes estudos sobre radioatividade, sendo ganhadora de dois prêmios Nobel?',
 'nivel': 'medio',
 'opcoes': {'A': 'Marie Curie', 'B': 'Paul Erdős', 'C': 'Clive W.J. Granger', 'D': 'Maria Ressa'},
-	          'correta': 'A'},
+'correta': 'A'},
 	
 
-	         {'titulo': 'Quem é considerada a primeira pessoa programadora do mundo?!',
+{'titulo': 'Quem é considerada a primeira pessoa programadora do mundo?!',
 	          'nivel': 'medio',
 	          'opcoes': {'A': 'Marie Curie', 'B': 'Alan Turing', 'C': 'Ada Lovelace', 'D': 'Edsger Dijkstra'},
 	          'correta': 'C'},
