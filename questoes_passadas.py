@@ -1,6 +1,6 @@
+from funcoes import *
 
-
-questoes = [
+questoes = transforma_base([
 {'titulo': 'Qual o resultado da operação 57 + 32?',
 'nivel': 'facil',
 'opcoes': {'A': '-19', 'B': '85', 'C': '89', 'D': '99'},
@@ -170,6 +170,4 @@ questoes = [
 'nivel': 'dificil',
 'opcoes': {'A': 'Uma banda de Rock', 'B': 'Uma marca de luxo', 'C': 'Cidade Francesa', 'D': 'Morte de tecido orgânico'},
 'correta': 'D'}
-]
-
-
+])
