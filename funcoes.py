@@ -110,24 +110,29 @@ def gera_ajuda(questao):
         a2 = questao['opcoes'][alternativa_2]
         return 'DICA:\nOpções certamente erradas: {0} | {1}'.format(a1,a2)
 
+from questoes_passadas import *
 from lista_premio import *
 
-def produz_uma_questao(nivel,lista_sorteados,id, pulos):
-    
+def produz_uma_questao(questoes,nivel,id):
+    lista_sorteados = list(range(1,id-1))
+
     questao = sorteia_questao_inedida(questoes, nivel, lista_sorteados)
     questao_para_texto(questao, id)
     
-    resposta = input('Qual sua resposta?!)
+    resposta = input('Qual sua resposta?!')
     
     alternativa_correta = questao['correta']
     lista_de_alternativas = ['A', 'B', 'C', 'D']
     lista_de_erradas = lista_de_alternativas.remove(alternativa_correta)
     
-        if resposta == alternativa_correta:
-            print('Você acertou! Seu prêmio atual é {0}'.format())
-        elif resposta in lista_de_erradas:
-            print('Que pena! Você errou e vai sair sem nada :(')
+    
+    if resposta == alternativa_correta:
+        print('Você acertou! Seu prêmio atual é R${0}'.format(p_acumulado[id - 1]))
+    elif resposta in lista_de_erradas:
+        print('Que pena! Você errou e vai sair sem nada :(')
 
+x = produz_uma_questao(questoes, 'facil', 1)
+print(x)
 # ALTERAÇÃO DE COR
 
 # Orientações de uso do format para variações de cor com ANSI:
