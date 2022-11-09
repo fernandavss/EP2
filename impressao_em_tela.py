@@ -1,5 +1,5 @@
-from funcoes_2 import *
-
+from funcoes import *
+from questoes_prof import questoes
 
 #Apresentação do jogo
 
@@ -15,12 +15,9 @@ input('Aperte ENTER para continuar...')
 
 input('Lá vem a primeira questão!\nVamos começar com questões de nivel {0}FÁCIL{1}!\nAperte ENTER para continuar...'.format('\033[0;35m','\033[m'))
 
-from questoes_prof import questoes
 
 #Passo 1: Checando validade da lista de questões
 p_1 = valida_questoes(questoes)
-
-print(p_1)
 
 soma = 0
 
@@ -33,7 +30,3 @@ if soma == len(questoes):
     jogando = True
     while jogando:
         
-
-
-    #
-
