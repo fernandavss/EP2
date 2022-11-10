@@ -113,6 +113,8 @@ def gera_ajuda(questao):
 from questoes_passadas import *
 from lista_premio import *
 
+#produz questao
+
 def produz_uma_questao(questoes,nivel,id):
     lista_sorteados = list(range(1,id))
 
