@@ -131,8 +131,7 @@ def produz_uma_questao(questoes,nivel,id):
     elif resposta in lista_de_erradas:
         print('Que pena! Você errou e vai sair sem nada :(')
 
-x = produz_uma_questao(questoes, 'facil', 1)
-print(x)
+
 # ALTERAÇÃO DE COR
 
 # Orientações de uso do format para variações de cor com ANSI:
