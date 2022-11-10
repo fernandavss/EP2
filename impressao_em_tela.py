@@ -1,6 +1,8 @@
 from funcoes import *
 from questoes_prof import questoes
 
+relacao_id_nivel = {1:'facil',2:'facil',3:'facil',4:'medio',5:'medio',6:'medio',7:'dificil',8:'dificil',9:'dificil'}
+
 #Apresentação do jogo
 
 print("Eai!\nVocê está no Fortuna FeCami e vai ter a oportunidade de milhões! Responda às seguintes perguntas e concorra a um prêmio de 1 milhão de reais!!")
@@ -24,9 +26,25 @@ soma = 0
 for dicio_de_erro in p_1:
     if dicio_de_erro == {}:
         soma += 1
+print(soma)
+
 if soma == len(questoes):
+    print('c')
+
     lista_sorteados = []
     #Passo 2: Separando-as por nível em um dicionário (t_1)
+
     jogando = True
+    id = 1
+
     while jogando:
-        jogando = False
+
+        for numero_questao,Nivel in relacao_id_nivel.items():
+            if numero_questao == id:
+                nivel = Nivel 
+        print(nivel)
+
+        questao = sorteia_questao_inedida(questoes, nivel, lista_sorteados)
+        
+    
+
