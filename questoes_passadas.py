@@ -169,5 +169,114 @@ questoes = transforma_base([
 {'titulo': 'O que é Necrose?',
 'nivel': 'dificil',
 'opcoes': {'A': 'Uma banda de Rock', 'B': 'Uma marca de luxo', 'C': 'Cidade Francesa', 'D': 'Morte de tecido orgânico'},
-'correta': 'D'}
+'correta': 'D'},
+
+# 10 feitas
+
+{'titulo': 'Qual a data de nascimento de Leonardo Davinte?',
+'nivel': 'medio',
+'opcoes': {'A': '15/04', 'B': '08/12', 'C': '17/09', 'D': '30/01'},
+'correta': 'A'},
+
+{'titulo': 'Qual a cor do cavalo branco de Napoleão?',
+'nivel': 'medio',
+'opcoes': {'A': 'Branco', 'B': 'Preto', 'C': 'Marrom', 'D': 'Cinza'},
+'correta': 'C'},
+
+{'titulo': 'Quantos anos durou a guerra dos cem anos?',
+'nivel': 'medio',
+'opcoes': {'A': '100', 'B': '99', 'C': '101', 'D': '116'},
+'correta': 'D'},
+
+{'titulo': 'Qual cor não faz parte das cores primárias?',
+'nivel': 'facil',
+'opcoes': {'A': 'amarelo', 'B': 'azul', 'C': 'vermelho', 'D': 'roxo'},
+'correta': 'D'},
+
+{'titulo': 'Quem descobriu o Brasil?',
+'nivel': 'facil',
+'opcoes': {'A': 'José Amado', 'B': 'Pedro Alveres Cabral', 'C': 'Luiz Lacerda', 'D': 'Dom Pedro'},
+'correta': 'B'},
+
+{'titulo': 'Quantos pernas a centopeia não tem?',
+'nivel': 'facil',
+'opcoes': {'A': '300', 'B': '320', 'C': '100', 'D': '30'},
+'correta': 'C'},
+
+{'titulo': 'pior analfabeto para Bertold Brecht:',
+'nivel': 'dificil',
+'opcoes': {'A': 'analfabeto funcional', 'B': 'analfabeto politico', 'C': 'analfabeto digital', 'D': 'aquele que não reconhece a própria ignorancia'},
+'correta': 'B'},
+
+
+
+{'titulo': 'quantos tipos de obras Jose de Alencar escreveu?',
+'nivel': 'dificil',
+'opcoes': {'A': '5', 'B': '7', 'C': '4', 'D': '3'},
+'correta': 'C'},
+
+{'titulo': 'Qual o livro de Wislawa Zsymbroska?',
+'nivel': 'dificil',
+'opcoes': {'A': 'Ocaso do Seculo', 'B': 'Pessoas perdidas', 'C': 'O barco que salvou', 'D': 'nenhuma das anteriores'},
+'correta': 'A'},
+
+{'titulo': 'Quem foi Miguel Bakun?',
+'nivel': 'dificil',
+'opcoes': {'A': 'escritor', 'B': 'sociologo', 'C': 'pintor', 'D': 'ator'},
+'correta': 'C'},
+
+# 10 questoes feitas
+
+{'titulo': 'Qual dessas cores nao e secundaria?',
+'nivel': 'facil',
+'opcoes': {'A': 'amarelo', 'B': 'laranja', 'C': 'verde', 'D': 'roxo'},
+'correta': 'A'},
+
+{'titulo': 'Quanto estados o Brasil tem?',
+'nivel': 'facil',
+'opcoes': {'A': '25', 'B': '26', 'C': '27', 'D': '24'},
+'correta': 'B'},
+
+{'titulo': 'Qual o pais mais populoso?',
+'nivel': 'facil',
+'opcoes': {'A': 'Brasil', 'B': 'India', 'C': 'China', 'D': 'Russia'},
+'correta': 'C'},
+
+{'titulo': 'Quantos paises tem na africa?',
+'nivel': 'medio',
+'opcoes': {'A': '33', 'B': '61', 'C': '58', 'D': '54'},
+'correta': 'D'},
+
+{'titulo': 'Quantas ilhas existem?',
+'nivel': 'medio',
+'opcoes': {'A': '8975', 'B': '11295', 'C': '17883', 'D': '27823'},
+'correta': 'C'},
+
+{'titulo': 'O que é o zoroatrismo?',
+'nivel': 'medio',
+'opcoes': {'A': 'religiao', 'B': 'corrente filosofica', 'C': 'classificacao socologica', 'D': 'comportamento'},
+'correta': 'A'},
+
+{'titulo': 'Qual a cidade mais ao norte do Brasil?',
+'nivel': 'dificil',
+'opcoes': {'A': 'Oiapoque', 'B': 'Uiramuta', 'C': 'Chui', 'D': 'Santa Rosa'},
+'correta': 'B'},
+
+{'titulo': 'Qual a cidade mais ao sul do Brasil?',
+'nivel': 'dificil',
+'opcoes': {'A': 'Oiapoque', 'B': 'Uiramuta', 'C': 'Chui', 'D': 'Santa Rosa'},
+'correta': 'C'},
+
+
+{'titulo': 'Qual a cidade mais ao sul do mundo?',
+'nivel': 'dificil',
+'opcoes': {'A': 'Svalbard', 'B': 'Ushuaia', 'C': 'Puerto Williams', 'D': 'Hammerfest'},
+'correta': 'C'},
+
+
+{'titulo': 'Qual grau do the lean?',
+'nivel': 'dificil',
+'opcoes': {'A': '45', 'B': '90', 'C': '37', 'D': '48'},
+'correta': 'A'}
 ])
+
