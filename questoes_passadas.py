@@ -1,4 +1,4 @@
-from funcoes import *
+from funcoes import transforma_base
 
 questoes = transforma_base([
 {'titulo': 'Qual o resultado da operação 57 + 32?',
