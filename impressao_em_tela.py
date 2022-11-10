@@ -1,5 +1,5 @@
 from funcoes import *
-from questoes_prof import questoes_p
+from questoes_prof import *
 from questoes_passadas import questoes
 
 
