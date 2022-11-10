@@ -1,5 +1,7 @@
 from funcoes import *
-from questoes_prof import questoes
+from questoes_prof import questoes_p
+from questoes_passadas import questoes
+
 
 relacao_id_nivel = {1:'facil',2:'facil',3:'facil',4:'medio',5:'medio',6:'medio',7:'dificil',8:'dificil',9:'dificil'}
 
@@ -19,7 +21,7 @@ input('Lá vem a primeira questão!\nVamos começar com questões de nivel {0}F�
 
 
 #Passo 1: Checando validade da lista de questões
-p_1 = valida_questoes(questoes)
+p_1 = valida_questoes(questoes_p)
 
 soma = 0
 
