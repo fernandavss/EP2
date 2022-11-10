@@ -114,7 +114,7 @@ from questoes_passadas import *
 from lista_premio import *
 
 def produz_uma_questao(questoes,nivel,id):
-    lista_sorteados = list(range(1,id-1))
+    lista_sorteados = list(range(1,id))
 
     questao = sorteia_questao_inedida(questoes, nivel, lista_sorteados)
     questao_para_texto(questao, id)
