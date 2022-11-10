@@ -39,12 +39,11 @@ if soma == len(questoes):
 
     while jogando:
 
-        for numero_questao,Nivel in relacao_id_nivel.items():
-            if numero_questao == id:
-                nivel = Nivel 
-        print(nivel)
+        nivel = relacao_id_nivel[id]
 
         questao = sorteia_questao_inedida(questoes, nivel, lista_sorteados)
-        
-    
+        lista_sorteados.append(questao)
 
+        print(questao_para_texto(questao, id))
+
+        jogando = False
