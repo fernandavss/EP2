@@ -29,4 +29,4 @@ if soma == len(questoes):
     #Passo 2: Separando-as por nível em um dicionário (t_1)
     jogando = True
     while jogando:
-        
+        jogando = False
