@@ -29,8 +29,8 @@ for dicio_de_erro in p_1:
     if dicio_de_erro == {}:
         soma += 1
 print(soma)
-
-if soma == len(questoes):
+print(len(questoes))
+if soma == len(questoes_p):
     print('c')
 
     lista_sorteados = []
