@@ -274,7 +274,7 @@ questoes = [
 'correta': 'C'},
 
 
-{'titulo': 'Qual grau do ‘the lean’?',
+{'titulo': 'Qual grau do the lean?',
 'nivel': 'dificil',
 'opcoes': {'A': '45', 'B': '90', 'C': '37', 'D': '48'},
 'correta': 'A'}
