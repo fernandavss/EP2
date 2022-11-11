@@ -40,10 +40,12 @@ if soma == len(questoes_p):
     jogando = True
     id = 1
     erro = 0
-
+    ajuda = 0
+    pula = 0
     while jogando:
 
         nivel = relacao_id_nivel[id]
+
 
         if erro == 0:
             questao = sorteia_questao_inedida(questoes, nivel, lista_sorteados)
@@ -52,7 +54,7 @@ if soma == len(questoes_p):
             X = questao_para_texto(questao, id)
             print(X)
 
-            resposta_perg = str(input('resposta:'))
+            resposta_perg = str(input('resposta: '))
 
             print(questao['correta'])
 
@@ -70,15 +72,39 @@ if soma == len(questoes_p):
                     break
 
                 elif resposta_perg == 'pula':
-                    print('pula-pula')
-                    id+=1
-                
+                    if pula in [0,1]:
+                        input('Ok, pulando! Você ainda tem {0} pulos!\nAperte ENTER para continuar...'.format(2 - pula))
+                        pula += 1
+                        id+=1
+                    elif pula == 2:
+                        input('Ok, pulando! ATENÇÃO: você não tem mais direito a pulos!\nAperte ENTER para continuar...')
+                        pula += 1
+                        id+=1
+                    else:
+                        while resposta_perg == 'pula':
+                            input('{0}Não deu! Você não tem mais direito a pulos!{1}\nAperte ENTER para continuar...'.format('\033[1;31m','\033[m'))
+                            print(X)
+                            resposta_perg = str(input('resposta: '))
+                        if resposta_perg == questao['correta']:
+                            print('Você acertou! Seu prêmio é de R${0}'.format(p_acumulado[id-1]))
+                            id += 1
+                        elif resposta_perg in alternativas and resposta_perg != questao['correta']:
+                            print('errou feio')
+                            break
+                        elif resposta_perg == 'sair':
+                            print('nunca')
+                            break
+                        elif resposta_perg == 'ajuda':
+                            print('nao')
+                            id+=1
+
+
                 elif resposta_perg in alternativas:
                     print('errou feio')
                     break
                 
                 else:
-                    print('opção inálida! ERRO RUDE\n As opções de resposta são: A,B,C,D, ajuda, pula e sair')
+                    print('opção inválida! ERRO RUDE\n As opções de resposta são: A,B,C,D, ajuda, pula e sair')
                     resposta_perg = input('resposta:')
                     if resposta_perg == questao['correta']:
                         print('Você acertou! Seu prêmio é de R${0}'.format(p_acumulado[id-1]))
