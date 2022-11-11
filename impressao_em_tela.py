@@ -94,7 +94,7 @@ if soma == len(questoes_p):
                             id +=1
                             break
                         elif resposta_pergunta in alternativas:
-                            print('perdeu')
+                            print('perdeu playboy')
                             erro +=1
                             break
 
