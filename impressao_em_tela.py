@@ -4,6 +4,7 @@ from questoes_passadas import questoes
 
 
 relacao_id_nivel = {1:'facil',2:'facil',3:'facil',4:'medio',5:'medio',6:'medio',7:'dificil',8:'dificil',9:'dificil'}
+alternativas = ['A','B','C','D']
 
 #Apresentação do jogo
 
@@ -46,6 +47,37 @@ if soma == len(questoes_p):
         questao = sorteia_questao_inedida(questoes, nivel, lista_sorteados)
         lista_sorteados.append(questao)
 
-        print(questao_para_texto(questao, id))
+        X = questao_para_texto(questao, id)
+        print(X)
 
-        jogando = False
+        resposta_perg = str(input('resposta:'))
+
+        print(questao['correta'])
+        if resposta_perg == questao['correta']:
+            print('Você acertou! Seu prêmio é de R${0}'.format(p_acumulado[id-1]))
+            id += 1
+
+        elif resposta_perg != questao['correta']:
+            if resposta_perg == 'ajuda':
+                print('nao')
+                id+=1
+
+            elif resposta_perg == 'sair':
+                print('nunca')
+                break
+
+            elif resposta_perg == 'pula':
+                print('pula-pula')
+                id+=1
+            
+            elif resposta_perg in alternativas:
+                print('errou feio')
+                break
+            
+            else:
+                print('opção inálida! ERRO RUDE\n As opções de resposta são: A,B,C,D, ajuda, pula e sair')
+                resposta_perg = input('resposta:')
+                
+
+
+        
