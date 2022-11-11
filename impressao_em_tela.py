@@ -81,7 +81,7 @@ if soma == len(questoes_p):
                     print('opção inálida! ERRO RUDE\n As opções de resposta são: A,B,C,D, ajuda, pula e sair')
                     resposta_perg = input('resposta:')
                     if resposta_perg == questao['correta']:
-                        print('Você acertou! Seu prêmio é de R${0}'.format(p_acumulado[id-1]))
+                        print('Você acertou! Seu prêmio é de R${0}'.format(premios[id-1]))
                         id+=1
                     elif resposta_perg in alternativas:
                         print('perdeu')
