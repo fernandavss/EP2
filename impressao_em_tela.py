@@ -41,6 +41,7 @@ if soma == len(questoes_p):
     id = 1
     erro = 0
     ajudas = 2
+    pula = 0
 
     while jogando:
 
@@ -130,7 +131,7 @@ if soma == len(questoes_p):
                             print(X)
                             resposta_perg = str(input('resposta: '))
                         if resposta_perg == questao['correta']:
-                            print('Você acertou! Seu prêmio é de R${0}'.format(p_acumulado[id-1]))
+                            print('Você acertou! Seu prêmio é de R${0}'.format(premios[id-1]))
                             id += 1
                         elif resposta_perg in alternativas and resposta_perg != questao['correta']:
                             print('errou feio')
