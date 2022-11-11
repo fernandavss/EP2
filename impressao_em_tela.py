@@ -39,45 +39,68 @@ if soma == len(questoes_p):
 
     jogando = True
     id = 1
+    erro = 0
 
     while jogando:
 
         nivel = relacao_id_nivel[id]
 
-        questao = sorteia_questao_inedida(questoes, nivel, lista_sorteados)
-        lista_sorteados.append(questao)
+        if erro == 0:
+            questao = sorteia_questao_inedida(questoes, nivel, lista_sorteados)
+            lista_sorteados.append(questao)
 
-        X = questao_para_texto(questao, id)
-        print(X)
+            X = questao_para_texto(questao, id)
+            print(X)
 
-        resposta_perg = str(input('resposta:'))
+            resposta_perg = str(input('resposta:'))
 
-        print(questao['correta'])
-        if resposta_perg == questao['correta']:
-            print('Você acertou! Seu prêmio é de R${0}'.format(p_acumulado[id-1]))
-            id += 1
+            print(questao['correta'])
 
-        elif resposta_perg != questao['correta']:
-            if resposta_perg == 'ajuda':
-                print('nao')
-                id+=1
+            if resposta_perg == questao['correta']:
+                print('Você acertou! Seu prêmio é de R${0}'.format(p_acumulado[id-1]))
+                id += 1
 
-            elif resposta_perg == 'sair':
-                print('nunca')
-                break
+            elif resposta_perg != questao['correta']:
+                if resposta_perg == 'ajuda':
+                    print('nao')
+                    id+=1
 
-            elif resposta_perg == 'pula':
-                print('pula-pula')
-                id+=1
-            
-            elif resposta_perg in alternativas:
-                print('errou feio')
-                break
-            
-            else:
-                print('opção inálida! ERRO RUDE\n As opções de resposta são: A,B,C,D, ajuda, pula e sair')
-                resposta_perg = input('resposta:')
+                elif resposta_perg == 'sair':
+                    print('nunca')
+                    break
+
+                elif resposta_perg == 'pula':
+                    print('pula-pula')
+                    id+=1
                 
+                elif resposta_perg in alternativas:
+                    print('errou feio')
+                    break
+                
+                else:
+                    print('opção inálida! ERRO RUDE\n As opções de resposta são: A,B,C,D, ajuda, pula e sair')
+                    resposta_perg = input('resposta:')
+                    if resposta_perg == questao['correta']:
+                        print('Você acertou! Seu prêmio é de R${0}'.format(p_acumulado[id-1]))
+                        id+=1
+                    elif resposta_perg in alternativas:
+                        print('perdeu')
+                        break
+                    while resposta_perg not in ['A','B','C','D','ajuda','pula','sair']:
+                        print('opção inálida! ERRO RUDE\n As opções de resposta são: A,B,C,D, ajuda, pula e sair')
+                        resposta_pergunta = input('resposta:')
+                        if resposta_pergunta == questao['correta']:
+                            print('Você acertou! Seu prêmio é de R${0}'.format(p_acumulado[id-1]))
+                            id +=1
+                            break
+                        elif resposta_pergunta in alternativas:
+                            print('perdeu')
+                            erro +=1
+                            break
+
+
+
+
 
 
         
