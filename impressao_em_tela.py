@@ -40,6 +40,7 @@ if soma == len(questoes_p):
     jogando = True
     id = 1
     erro = 0
+    ajudas = 2
 
     while jogando:
 
@@ -57,13 +58,34 @@ if soma == len(questoes_p):
             print(questao['correta'])
 
             if resposta_perg == questao['correta']:
-                print('Você acertou! Seu prêmio é de R${0}'.format(p_acumulado[id-1]))
+                print('Você acertou! Seu prêmio é de R${0}'.format(premios[id-1]))
+                input('Aperte ENTER para continuar...')
                 id += 1
 
             elif resposta_perg != questao['correta']:
+
                 if resposta_perg == 'ajuda':
-                    print('nao')
-                    id+=1
+                    if ajudas == 2:
+                        print('ok! Lá vem ajuda! ATENÇÃO: você tem direito a mais uma ajuda')
+                        input('Aperte ENTER para continuar...')
+                        print(gera_ajuda(questao))
+                        input('Aperte ENTER para continuar...')
+                        print(X)
+                        resposta_perg = str(input('resposta:'))
+                        if resposta_perg == questao['correta']:
+                            print('Você acertou! Seu prêmio é de R${0}'.format(premios[id-1]))
+                            input('Aperte ENTER para continuar...')
+                            id += 1
+                        elif resposta_perg == 'sair':
+                            print('ok')
+                            break
+                        elif resposta_perg in alternativas:
+                            print('errou feio')
+                            break
+
+
+                    elif ajudas == 1:
+                        id+=1
 
                 elif resposta_perg == 'sair':
                     print('nunca')
@@ -104,10 +126,4 @@ if soma == len(questoes_p):
                             print('nao')
                             id += 1
 
-
-
-
-
-
-
-        
+      
