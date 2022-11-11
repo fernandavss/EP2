@@ -114,9 +114,18 @@ if soma == len(questoes_p):
                             id +=1
                             break
                         elif resposta_pergunta in alternativas:
-                            print('perdeu playboy')
+                            print('perdeu tudo :( ) ')
+                            cont = input('quer continuar jogando [S/N]?')
+                            if cont == 'S':
+                                id = 1
+                                erro = 0
+                                pula = 0 
+                                ajudas = 0
+                                N= 1
+                                jogando = True
+                            elif cont == 'N':
+                                jogando = False
                             erro +=1
-                            break
                         elif resposta_pergunta == 'ajuda':
                             print('nao')
                             id += 1
@@ -158,8 +167,17 @@ if soma == len(questoes_p):
 
 
                 elif resposta_perg in alternativas:
-                    print('errou feio')
-                    break
+                    print('perdeu tudo :( ) ')
+                    cont = input('quer continuar jogando [S/N]?')
+                    if cont == 'S':
+                        id = 1
+                        erro = 0
+                        pula = 0 
+                        ajudas = 0
+                        N= 1
+                        jogando = True
+                    elif cont == 'N':
+                        jogando = False
                 
                 else:
                     print('opção inválida! ERRO RUDE\n As opções de resposta são: A,B,C,D, ajuda, pula e sair')
