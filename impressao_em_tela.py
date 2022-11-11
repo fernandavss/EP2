@@ -40,6 +40,7 @@ if soma == len(questoes_p):
     jogando = True
     id = 1
     erro = 0
+    ajudas = 2
 
     while jogando:
 
@@ -86,9 +87,6 @@ if soma == len(questoes_p):
                             print('perdeu playboy')
                             erro +=1
                             break
-                        elif resposta_pergunta == 'ajuda':
-                            print('nao')
-                            id += 1
                         elif resposta_pergunta == 'pula':
                             print('nao')
                             id += 1
