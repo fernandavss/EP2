@@ -97,6 +97,13 @@ if soma == len(questoes_p):
                             print('perdeu playboy')
                             erro +=1
                             break
+                        elif resposta_pergunta == 'ajuda':
+                            print('nao')
+                            id += 1
+                        elif resposta_pergunta == 'pula':
+                            print('nao')
+                            id += 1
+
 
 
 
