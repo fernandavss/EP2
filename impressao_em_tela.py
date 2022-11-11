@@ -65,27 +65,53 @@ if soma == len(questoes_p):
             elif resposta_perg != questao['correta']:
 
                 if resposta_perg == 'ajuda':
-                    if ajudas == 2:
-                        print('ok! Lá vem ajuda! ATENÇÃO: você tem direito a mais uma ajuda')
+
+                    while ajudas!=0:
+                        if ajudas == 2:
+                            print('ok! Lá vem ajuda! ATENÇÃO: você tem direito a mais uma ajuda')
+                            ajudas-=1
+                        elif ajudas == 1:
+                            print('ok! Lá vem ajuda! ATENÇÃO: você NAO tem direito a mais ajuda')
+                            ajudas -= 1
                         input('Aperte ENTER para continuar...')
                         print(gera_ajuda(questao))
                         input('Aperte ENTER para continuar...')
                         print(X)
-                        resposta_perg = str(input('resposta:'))
-                        if resposta_perg == questao['correta']:
+                        resposta_pergunta = input('resposta:')
+                        if resposta_pergunta == questao['correta']:
                             print('Você acertou! Seu prêmio é de R${0}'.format(premios[id-1]))
-                            input('Aperte ENTER para continuar...')
+                            id +=1
+                            break
+                        elif resposta_pergunta in alternativas:
+                            print('perdeu playboy')
+                            erro +=1
+                            break
+                        elif resposta_pergunta == 'ajuda':
+                            print('nao')
                             id += 1
-                        elif resposta_perg == 'sair':
-                            print('ok')
+                        elif resposta_pergunta == 'pula':
+                            print('nao')
+                            id += 1
+                    while ajudas == 0:
+                        print('voce nao tem direito a mais ajudas')
+                        input('Aperte ENTER para continuar...')
+                        print(X)
+                        resposta_pergunta = input('resposta:')
+                        if resposta_pergunta == questao['correta']:
+                            print('Você acertou! Seu prêmio é de R${0}'.format(premios[id-1]))
+                            id +=1
                             break
-                        elif resposta_perg in alternativas:
-                            print('errou feio')
+                        elif resposta_pergunta in alternativas:
+                            print('perdeu playboy')
+                            erro +=1
                             break
+                        elif resposta_pergunta == 'ajuda':
+                            print('nao')
+                            id += 1
+                        elif resposta_pergunta == 'pula':
+                            print('nao')
+                            id += 1
 
-
-                    elif ajudas == 1:
-                        id+=1
 
                 elif resposta_perg == 'sair':
                     print('nunca')
