@@ -42,10 +42,14 @@ if soma == len(questoes_p):
     erro = 0
     ajudas = 2
     pula = 0
+    N= 0
 
     while jogando:
 
         nivel = relacao_id_nivel[id]
+
+        if N != 0:
+            ajudas = 2
 
 
         if erro == 0:
@@ -85,13 +89,22 @@ if soma == len(questoes_p):
                             id +=1
                             break
                         elif resposta_pergunta in alternativas:
-                            print('perdeu playboy')
-                            erro +=1
-                            break
+                            print('perdeu tudo :( ) ')
+                            cont = input('quer continuar jogando [S/N]?')
+                            if cont == 'S':
+                                id = 1
+                                erro = 0
+                                pula = 0 
+                                ajudas = 0
+                                N= 1
+                                jogando = True
+                            elif cont == 'N':
+                                jogando = False
+                        #rever pulo
                         elif resposta_pergunta == 'pula':
                             print('nao')
                             id += 1
-                    while ajudas == 0:
+                    while ajudas == 0 and N!= 1:
                         print('voce nao tem direito a mais ajudas')
                         input('Aperte ENTER para continuar...')
                         print(X)
@@ -113,7 +126,7 @@ if soma == len(questoes_p):
 
 
                 elif resposta_perg == 'sair':
-                    print('nunca')
+                    print('saindo...')
                     break
 
                 elif resposta_perg == 'pula':
@@ -164,13 +177,16 @@ if soma == len(questoes_p):
                             print('Você acertou! Seu prêmio é de R${0}'.format(p_acumulado[id-1]))
                             id +=1
                             break
+                        #REVER ERRO
                         elif resposta_pergunta in alternativas:
                             print('perdeu playboy')
                             erro +=1
                             break
+                        #REVER AJUDA
                         elif resposta_pergunta == 'ajuda':
                             print('nao')
                             id += 1
+                        #REVER PULA
                         elif resposta_pergunta == 'pula':
                             print('nao')
                             id += 1
