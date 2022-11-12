@@ -66,14 +66,18 @@ while recomeco:
     
                 resposta_perg = str(input('resposta: '))
                 
+
                 #correto
                 if resposta_perg == questao['correta']:
                     print('{0}Você acertou! Seu prêmio é de R${1}.{2}'.format('\033[1;32m',premios[id-1],'\033[m'))
                     input('Aperte ENTER para continuar...\n\n\n')
                     id += 1
+                
 
+                #Diferente do correto [ajuda, parar, pular e outro]
                 elif resposta_perg != questao['correta']:
                     
+
                     #ajuda
                     if resposta_perg == 'ajuda':
 
