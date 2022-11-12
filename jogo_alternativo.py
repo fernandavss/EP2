@@ -73,7 +73,8 @@ while recomeco:
                     id += 1
                 else:
                     print('{0}PARABÉNS!!! Você finalizou o jogo e conquistou {1}1 MILHÃO DE REAIS{2}\nTu é FODA{3}'.format('\033[1;37m','\033[1;36m','\033[1;37m','\033[m'))
-
+                    recomeco = False
+                    break
             #Diferente do correto [ajuda, parar, pular e outro]
             elif resposta_perg != questao['correta']:
                 
