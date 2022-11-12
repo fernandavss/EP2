@@ -8,17 +8,17 @@ alternativas = ['A','B','C','D']
 
 #Apresentação do jogo
 
-print("Eai!\nVocê está no Fortuna FeCami e vai ter a oportunidade de milhões! Responda às seguintes perguntas e concorra a um prêmio de 1 milhão de reais!!")
+print("Eai!\n\nVocê está no Fortuna FeCami e vai ter a oportunidade de milhões! Responda às seguintes perguntas e concorra a um prêmio de 1 milhão de reais!!\n")
 
 #Primeira interação
 
 nome_jogador = input('Qual o seu nome?:')
 
-print('Blz, {0}, você tem direito a {1}pular 3 vezes e a 2 ajudas{2}\nSuas opções de resposta são {3}"A", "B", "C", "D", "ajuda", "pula" e "parar".{4}\nNada além disso, ein..!'.format(nome_jogador,'\033[0;35m','\033[m','\033[1;36m','\033[m'))
+print('Blz, {0}, você tem direito a {1}pular 3 vezes e a 2 ajudas{2}\nSuas opções de resposta são {3}"A", "B", "C", "D", "ajuda", "pula" e "parar".{4}\n'.format(nome_jogador,'\033[0;35m','\033[m','\033[1;36m','\033[m'))
 
-input('Aperte ENTER para continuar...')
+input('Aperte ENTER para continuar...\n')
 
-input('Lá vem a primeira questão!\nVamos começar com questões de nivel {0}FÁCIL{1}!\nAperte ENTER para continuar...'.format('\033[0;35m','\033[m'))
+input('Para a primeira questão, vamos começar com o nivel {0}FÁCIL{1}!\nAperte ENTER para continuar...\n\n'.format('\033[0;35m','\033[m'))
 
 
 #Passo 1: Checando validade da lista de questões
