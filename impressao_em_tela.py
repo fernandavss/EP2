@@ -99,6 +99,7 @@ while recomeco:
                                     jogando = False
                                     recomeco = True
                                 elif cont == 'N':
+                                    print('saindo...')
                                     jogando = False
                                     recomeco = False
                             elif resposta_pergunta == 'pula':
@@ -132,6 +133,7 @@ while recomeco:
                                     jogando = False
                                     recomeco = True
                                 elif cont == 'N':
+                                    print('saindo...')
                                     jogando = False
                                     recomeco = False
                                 erro +=1
@@ -171,6 +173,7 @@ while recomeco:
                                     jogando = False
                                     recomeco = True
                                 elif cont == 'N':
+                                    print('saindo...')
                                     jogando = False
                                     recomeco = False
                             elif resposta_perg == 'parar':
@@ -202,6 +205,7 @@ while recomeco:
                                             jogando = False
                                             recomeco = True
                                         elif cont == 'N':
+                                            print('saindo...')
                                             jogando = False
                                             recomeco = False
 
@@ -214,6 +218,7 @@ while recomeco:
                             jogando = False
                             recomeco = True
                         elif cont == 'N':
+                            print('saindo...')
                             jogando = False
                             recomeco = False
                     
@@ -238,6 +243,7 @@ while recomeco:
                                 jogando = False
                                 recomeco = True
                             elif cont == 'N':
+                                print('saindo...')
                                 jogando = False
                                 recomeco = False
                         
@@ -266,6 +272,7 @@ while recomeco:
                                             jogando = False
                                             recomeco = True
                                         elif cont == 'N':
+                                            print('saindo...')
                                             jogando = False
                                             recomeco = False
 
@@ -301,6 +308,7 @@ while recomeco:
                                             jogando = False
                                             recomeco = True
                                         elif cont == 'N':
+                                            print('saindo...')
                                             jogando = False
                                             recomeco = False
                                     elif resposta_pergunta == 'pula':
@@ -326,6 +334,7 @@ while recomeco:
                                                     jogando = False
                                                     recomeco = True
                                                 elif cont == 'N':
+                                                    print('saindo...')
                                                     jogando = False
                                                     recomeco = False
 
@@ -351,6 +360,7 @@ while recomeco:
                                     jogando = False
                                     recomeco = True
                                 elif cont == 'N':
+                                    print('saindo...')
                                     jogando = False
                                     recomeco = False
                                 elif resposta_pergunta == 'pula':
@@ -376,6 +386,7 @@ while recomeco:
                                                 jogando = False
                                                 recomeco = True
                                             elif cont == 'N':
+                                                print('saindo...')
                                                 jogando = False
                                                 recomeco = False
                             elif resposta_perg == 'parar':
@@ -406,6 +417,7 @@ while recomeco:
                                             jogando = False
                                             recomeco = True
                                         elif cont == 'N':
+                                            print('saindo...')
                                             jogando = False
                                             recomeco = False
                                     elif resposta_pergunta == 'pula':
@@ -431,6 +443,7 @@ while recomeco:
                                                     jogando = False
                                                     recomeco = True
                                                 elif cont == 'N':
+                                                    print('saindo...')
                                                     jogando = False
                                                     recomeco = False
                                     elif resposta_perg == 'parar':
