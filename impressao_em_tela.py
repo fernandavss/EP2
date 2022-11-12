@@ -42,14 +42,11 @@ if soma == len(questoes_p):
     erro = 0
     ajudas = 2
     pula = 0
-    N= 0
+    k=0
 
     while jogando:
 
         nivel = relacao_id_nivel[id]
-
-        if N != 0:
-            ajudas = 2
 
 
         if erro == 0:
@@ -69,7 +66,8 @@ if soma == len(questoes_p):
                 id += 1
 
             elif resposta_perg != questao['correta']:
-
+                
+                #
                 if resposta_perg == 'ajuda':
 
                     while ajudas!=0:
@@ -78,6 +76,7 @@ if soma == len(questoes_p):
                             ajudas-=1
                         elif ajudas == 1:
                             print('ok! Lá vem ajuda! ATENÇÃO: você NAO tem direito a mais ajuda')
+                            k=1
                             ajudas -= 1
                         input('Aperte ENTER para continuar...')
                         print(gera_ajuda(questao))
@@ -96,7 +95,6 @@ if soma == len(questoes_p):
                                 erro = 0
                                 pula = 0 
                                 ajudas = 0
-                                N= 1
                                 jogando = True
                             elif cont == 'N':
                                 jogando = False
@@ -104,7 +102,8 @@ if soma == len(questoes_p):
                         elif resposta_pergunta == 'pula':
                             print('nao')
                             id += 1
-                    while ajudas == 0 and N!= 1:
+                    
+                    while ajudas == 0:
                         print('voce nao tem direito a mais ajudas')
                         input('Aperte ENTER para continuar...')
                         print(X)
@@ -121,7 +120,6 @@ if soma == len(questoes_p):
                                 erro = 0
                                 pula = 0 
                                 ajudas = 0
-                                N= 1
                                 jogando = True
                             elif cont == 'N':
                                 jogando = False
@@ -134,7 +132,7 @@ if soma == len(questoes_p):
                             id += 1
 
 
-                elif resposta_perg == 'sair':
+                elif resposta_perg == 'parar':
                     print('saindo...')
                     break
 
@@ -156,14 +154,48 @@ if soma == len(questoes_p):
                             print('Você acertou! Seu prêmio é de R${0}'.format(premios[id-1]))
                             id += 1
                         elif resposta_perg in alternativas and resposta_perg != questao['correta']:
-                            print('errou feio')
-                            break
+                            print('perdeu tudo :( ) ')
+                            cont = input('quer continuar jogando [S/N]?')
+                            if cont == 'S':
+                                id = 1
+                                erro = 0
+                                pula = 0 
+                                ajudas = 0
+                                jogando = True
+                            elif cont == 'N':
+                                jogando = False
                         elif resposta_perg == 'sair':
-                            print('nunca')
+                            print('saindo...')
                             break
                         elif resposta_perg == 'ajuda':
-                            print('nao')
-                            id+=1
+                            while ajudas!=0:
+                                if ajudas == 2:
+                                    print('ok! Lá vem ajuda! ATENÇÃO: você tem direito a mais uma ajuda')
+                                    ajudas-=1
+                                elif ajudas == 1:
+                                    print('ok! Lá vem ajuda! ATENÇÃO: você NAO tem direito a mais ajuda')
+                                    k=1
+                                    ajudas -= 1
+                                input('Aperte ENTER para continuar...')
+                                print(gera_ajuda(questao))
+                                input('Aperte ENTER para continuar...')
+                                print(X)
+                                resposta_pergunta = input('resposta:')
+                                if resposta_pergunta == questao['correta']:
+                                    print('Você acertou! Seu prêmio é de R${0}'.format(premios[id-1]))
+                                    id +=1
+                                    break
+                                elif resposta_pergunta in alternativas:
+                                    print('perdeu tudo :( ) ')
+                                    cont = input('quer continuar jogando [S/N]?')
+                                    if cont == 'S':
+                                        id = 1
+                                        erro = 0
+                                        pula = 0 
+                                        ajudas = 0
+                                        jogando = True
+                                    elif cont == 'N':
+                                        jogando = False
 
 
                 elif resposta_perg in alternativas:
@@ -174,7 +206,6 @@ if soma == len(questoes_p):
                         erro = 0
                         pula = 0 
                         ajudas = 0
-                        N= 1
                         jogando = True
                     elif cont == 'N':
                         jogando = False
@@ -186,27 +217,94 @@ if soma == len(questoes_p):
                         print('Você acertou! Seu prêmio é de R${0}'.format(premios[id-1]))
                         id+=1
                     elif resposta_perg in alternativas:
-                        print('perdeu')
-                        break
-                    while resposta_perg not in ['A','B','C','D','ajuda','pula','sair']:
-                        print('opção inálida! ERRO RUDE\n As opções de resposta são: A,B,C,D, ajuda, pula e sair')
+                        print('perdeu tudo :( ) ')
+                        cont = input('quer continuar jogando [S/N]?')
+                        if cont == 'S':
+                            id = 1
+                            erro = 0
+                            pula = 0 
+                            ajudas = 0
+                            jogando = True
+                        elif cont == 'N':
+                            jogando = False
+                    while resposta_perg not in ['A','B','C','D','ajuda','pula','parar']:
+                        print('opção inálida!\n As opções de resposta são: A,B,C,D, ajuda, pula e parar')
                         resposta_pergunta = input('resposta:')
                         if resposta_pergunta == questao['correta']:
-                            print('Você acertou! Seu prêmio é de R${0}'.format(p_acumulado[id-1]))
+                            print('Você acertou! Seu prêmio é de R${0}'.format(premios[id-1]))
                             id +=1
                             break
-                        #REVER ERRO
                         elif resposta_pergunta in alternativas:
-                            print('perdeu playboy')
-                            erro +=1
-                            break
-                        #REVER AJUDA
+                            print('perdeu tudo :( ) ')
+                            cont = input('quer continuar jogando [S/N]?')
+                            if cont == 'S':
+                                id = 1
+                                erro = 0
+                                pula = 0 
+                                ajudas = 0
+                                jogando = True
+                            elif cont == 'N':
+                                jogando = False
                         elif resposta_pergunta == 'ajuda':
-                            print('nao')
-                            id += 1
-                        #REVER PULA
+                            while ajudas!=0:
+                                if ajudas == 2:
+                                    print('ok! Lá vem ajuda! ATENÇÃO: você tem direito a mais uma ajuda')
+                                    ajudas-=1
+                                elif ajudas == 1:
+                                    print('ok! Lá vem ajuda! ATENÇÃO: você NAO tem direito a mais ajuda')
+                                    k=1
+                                    ajudas -= 1
+                                input('Aperte ENTER para continuar...')
+                                print(gera_ajuda(questao))
+                                input('Aperte ENTER para continuar...')
+                                print(X)
+                                resposta_pergunta = input('resposta:')
+                                if resposta_pergunta == questao['correta']:
+                                    print('Você acertou! Seu prêmio é de R${0}'.format(premios[id-1]))
+                                    id +=1
+                                    break
+                                elif resposta_pergunta in alternativas:
+                                    print('perdeu tudo :( ) ')
+                                    cont = input('quer continuar jogando [S/N]?')
+                                    if cont == 'S':
+                                        id = 1
+                                        erro = 0
+                                        pula = 0 
+                                        ajudas = 0
+                                        jogando = True
+                                    elif cont == 'N':
+                                        jogando = False
+
                         elif resposta_pergunta == 'pula':
-                            print('nao')
-                            id += 1
+                            if pula in [0,1]:
+                                input('Ok, pulando! Você ainda tem {0} pulos!\nAperte ENTER para continuar...'.format(2 - pula))
+                                pula += 1
+                                id+=1
+                            elif pula == 2:
+                                input('Ok, pulando! ATENÇÃO: você não tem mais direito a pulos!\nAperte ENTER para continuar...')
+                                pula += 1
+                                id+=1
+                            else:
+                                while resposta_perg == 'pula':
+                                    input('{0}Não deu! Você não tem mais direito a pulos!{1}\nAperte ENTER para continuar...'.format('\033[1;31m','\033[m'))
+                                    print(X)
+                                    resposta_perg = str(input('resposta: '))
+                                if resposta_perg == questao['correta']:
+                                    print('Você acertou! Seu prêmio é de R${0}'.format(premios[id-1]))
+                                    id += 1
+                                elif resposta_perg in alternativas and resposta_perg != questao['correta']:
+                                    print('perdeu tudo :( ) ')
+                                    cont = input('quer continuar jogando [S/N]?')
+                                    if cont == 'S':
+                                        id = 1
+                                        erro = 0
+                                        pula = 0 
+                                        ajudas = 0
+                                        jogando = True
+                                    elif cont == 'N':
+                                        jogando = False
+                        elif resposta_perg == 'parar':
+                            print('saindo...')
+                            break
 
       
