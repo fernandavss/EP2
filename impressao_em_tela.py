@@ -60,8 +60,6 @@ while recomeco:
                 print(X)
 
                 resposta_perg = str(input('resposta: '))
-
-                print(questao['correta'])
                 
                 #correto
                 if resposta_perg == questao['correta']:
