@@ -147,7 +147,9 @@ while recomeco:
                     #parar
                     elif resposta_perg == 'parar':
                         print('Fim de jogo')
+                        recomeco = False
                         break
+                        
 
                     #pular
                     elif resposta_perg == 'pula':
