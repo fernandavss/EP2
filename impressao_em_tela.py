@@ -31,6 +31,7 @@ for dicio_de_erro in p_1:
         soma += 1
 print(soma)
 print(len(questoes))
+
 if soma == len(questoes_p):
     print('c')
 
@@ -42,7 +43,6 @@ if soma == len(questoes_p):
     erro = 0
     ajudas = 2
     pula = 0
-    k=0
 
     while jogando:
 
@@ -59,7 +59,8 @@ if soma == len(questoes_p):
             resposta_perg = str(input('resposta: '))
 
             print(questao['correta'])
-
+            
+            #correto
             if resposta_perg == questao['correta']:
                 print('Você acertou! Seu prêmio é de R${0}'.format(premios[id-1]))
                 input('Aperte ENTER para continuar...')
@@ -67,7 +68,7 @@ if soma == len(questoes_p):
 
             elif resposta_perg != questao['correta']:
                 
-                #
+                #ajuda
                 if resposta_perg == 'ajuda':
 
                     while ajudas!=0:
@@ -94,7 +95,7 @@ if soma == len(questoes_p):
                                 id = 1
                                 erro = 0
                                 pula = 0 
-                                ajudas = 0
+                                ajudas = 2
                                 jogando = True
                             elif cont == 'N':
                                 jogando = False
@@ -141,11 +142,12 @@ if soma == len(questoes_p):
                             print('nao')
                             id += 1
 
-
+                #parar
                 elif resposta_perg == 'parar':
                     print('saindo...')
                     break
 
+                #pular
                 elif resposta_perg == 'pula':
                     if pula in [0,1]:
                         input('Ok, pulando! Você ainda tem {0} pulos!\nAperte ENTER para continuar...'.format(2 - pula))
@@ -207,7 +209,7 @@ if soma == len(questoes_p):
                                     elif cont == 'N':
                                         jogando = False
 
-
+                #errado
                 elif resposta_perg in alternativas:
                     print('perdeu tudo :( ) ')
                     cont = input('quer continuar jogando [S/N]?')
@@ -220,6 +222,7 @@ if soma == len(questoes_p):
                     elif cont == 'N':
                         jogando = False
                 
+                #outro
                 else:
                     print('opção inválida! ERRO RUDE\n As opções de resposta são: A,B,C,D, ajuda, pula e sair')
                     resposta_perg = input('resposta:')
