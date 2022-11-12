@@ -160,7 +160,7 @@ while recomeco:
                                 print('Você acertou! Seu prêmio é de R${0}'.format(premios[id-1]))
                                 id += 1
                             elif resposta_perg in alternativas and resposta_perg != questao['correta']:
-                                print('perdeu tudo :( ) ')
+                                print('perdeu tudo :(')
                                 cont = input('quer continuar jogando [S/N]?')
                                 if cont == 'S':
                                     ajudas = -1
@@ -168,7 +168,7 @@ while recomeco:
                                     recomeco = True
                                 elif cont == 'N':
                                     jogando = False
-                            elif resposta_perg == 'sair':
+                            elif resposta_perg == 'parar':
                                 print('saindo...')
                                 break
                             elif resposta_perg == 'ajuda':
@@ -201,7 +201,7 @@ while recomeco:
 
                     #errado
                     elif resposta_perg in alternativas:
-                        print('perdeu tudo :( ) ')
+                        print('perdeu tudo :(')
                         cont = input('quer continuar jogando [S/N]?')
                         if cont == 'S':
                             ajudas = -1
