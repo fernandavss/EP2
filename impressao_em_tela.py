@@ -292,7 +292,7 @@ while recomeco:
                                             jogando = False
                                             recomeco = False
 
-                    #errado
+                    #errado a alternativa
                     elif resposta_perg in alternativas:
                         print('perdeu tudo :(')
                         cont = input('quer continuar jogando [S/N]?')
@@ -307,9 +307,9 @@ while recomeco:
                     
 
 
-                    #outro
+                    #outro (resposta aleatoria)
                     else:
-                        print('Opção inválida! \n{0}ERRO RUDE{1}\n As opções de resposta são: {2}A,B,C,D, ajuda, pula e sair{3}'.format('\033[1;31m','\033[m','\033[1;36m','\033[m'))
+                        print('Opção inválida!\n{0}ERRO RUDE{1}\nAs opções de resposta são: {2}A,B,C,D, ajuda, pula e sair{3}'.format('\033[1;31m','\033[m','\033[1;36m','\033[m'))
                         resposta_perg = input('resposta:')
 
 
