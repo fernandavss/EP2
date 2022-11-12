@@ -148,11 +148,9 @@ while recomeco:
                         if pula in [0,1]:
                             input('Ok, pulando! Você ainda tem {0} pulos!\nAperte ENTER para continuar...'.format(2 - pula))
                             pula += 1
-                            id+=1
                         elif pula == 2:
                             input('Ok, pulando! ATENÇÃO: você não tem mais direito a pulos!\nAperte ENTER para continuar...')
                             pula += 1
-                            id+=1
                         else:
                             while resposta_perg == 'pula':
                                 input('{0}Não deu! Você não tem mais direito a pulos!{1}\nAperte ENTER para continuar...'.format('\033[1;31m','\033[m'))
