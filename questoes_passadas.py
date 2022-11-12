@@ -97,7 +97,7 @@ questoes = transforma_base([
 
 {'titulo': 'Como faço para chamar o SAMU?',
 'nivel': 'medio',
-'opcoes': {'A': 'Ligue 101', 'B': 'Ligue 192', 'C': 'Ligue 109', 'D': 'Ligue 122'},
+'opcoes': {'A': 'Ligue 191', 'B': 'Ligue 192', 'C': 'Ligue 193', 'D': 'Ligue 190'},
 'correta': 'B'},
 	
 
@@ -180,7 +180,7 @@ questoes = transforma_base([
 
 {'titulo': 'Qual a cor do cavalo branco de Napoleão?',
 'nivel': 'medio',
-'opcoes': {'A': 'Branco', 'B': 'Preto', 'C': 'Marrom', 'D': 'Cinza'},
+'opcoes': {'A': 'Branco', 'B': 'Preto', 'C': 'Marrom', 'D': 'Nenhuma, porque ele está morto'},
 'correta': 'C'},
 
 {'titulo': 'Quantos anos durou a guerra dos cem anos?',
