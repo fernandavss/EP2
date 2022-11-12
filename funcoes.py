@@ -129,7 +129,7 @@ def produz_uma_questao(questoes,nivel,id):
     
     
     if resposta == alternativa_correta:
-        print('Você acertou! Seu prêmio atual é R${0}'.format(p_acumulado[id - 1]))
+        print('Você acertou! Seu prêmio atual é R${0}'.format(premios[id - 1]))
     elif resposta in lista_de_erradas:
         print('Que pena! Você errou e vai sair sem nada :(')
 
