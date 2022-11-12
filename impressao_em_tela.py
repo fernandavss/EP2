@@ -100,8 +100,18 @@ if soma == len(questoes_p):
                                 jogando = False
                         #rever pulo
                         elif resposta_pergunta == 'pula':
-                            print('nao')
-                            id += 1
+                            if pula in [0,1]:
+                                input('Ok, pulando! Você ainda tem {0} pulos!\nAperte ENTER para continuar...'.format(2 - pula))
+                                pula += 1
+                                break
+                            elif pula == 2:
+                                input('Ok, pulando! ATENÇÃO: você não tem mais direito a pulos!\nAperte ENTER para continuar...')
+                                pula += 1
+                                break
+                            else:
+                                while resposta_perg == 'pula':
+                                    input('{0}Não deu! Você não tem mais direito a pulos!{1}\nAperte ENTER para continuar...'.format('\033[1;31m','\033[m'))
+                                    print(X)
                     
                     while ajudas == 0:
                         print('voce nao tem direito a mais ajudas')
