@@ -56,6 +56,8 @@ while recomeco:
                 questao = sorteia_questao_inedida(questoes, nivel, lista_sorteados)
                 lista_sorteados.append(questao)
 
+                if id == 4:
+                    input('{0}Parabéns! Você atingiu o nível {1}MÉDIO{2}!\nClique ENTER para continuar...\n\n\n'.format('\033[1;31m','\033[1;31m','\033[1;31m'))
                 X = questao_para_texto(questao, id)
                 print(X)
 
@@ -63,8 +65,8 @@ while recomeco:
                 
                 #correto
                 if resposta_perg == questao['correta']:
-                    print('Você acertou! Seu prêmio é de R${0}'.format(premios[id-1]))
-                    input('Aperte ENTER para continuar...')
+                    print('{0}Você acertou! Seu prêmio é de R${1}.{2}'.format('\033[1;35m',premios[id-1],'\033[m'))
+                    input('Aperte ENTER para continuar...\n\n\n')
                     id += 1
 
                 elif resposta_perg != questao['correta']:
@@ -77,12 +79,12 @@ while recomeco:
                                 print('ok! Lá vem ajuda! ATENÇÃO: você tem direito a mais uma ajuda')
                                 ajudas-=1
                             elif ajudas == 1:
-                                print('ok! Lá vem ajuda! ATENÇÃO: você NAO tem direito a mais ajuda')
+                                print('ok! Lá vem ajuda! ATENÇÃO: você {0}NÃO{1} tem direito a mais ajuda'.format('\033[1;32m','\033[m'))
                                 x=1
                                 ajudas -= 1
-                            input('Aperte ENTER para continuar...')
+                            input('Aperte ENTER para continuar...\n\n\n')
                             print(gera_ajuda(questao))
-                            input('Aperte ENTER para continuar...')
+                            input('Aperte ENTER para continuar...\n\n\n')
                             print(X)
                             resposta_pergunta = input('resposta:')
                             if resposta_pergunta == questao['correta']:
