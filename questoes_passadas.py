@@ -23,12 +23,12 @@ questoes = transforma_base([
 
 {'titulo': 'Qual destes termos menos tem relação com o fenômeno da globalização?',
 'nivel': 'facil',
-'opcoes': {'A': 'Aculturação', 'B': 'Neoliberalismo', 'C': 'União Europeia', 'D': 'Caldeirão do Huck'},
+'opcoes': {'A': 'Aculturação', 'B': 'Neoliberalismo', 'C': 'União Europeia', 'D': 'A Terra é plana'},
 'correta': 'D'},
 
 {'titulo': 'Qual o feriado do aniversário da cidade de São Paulo?',
 'nivel': 'facil',
-'opcoes': {'A': '25 de Janeiro', 'B': '24 de Março', 'C': '9 de Julho', 'D': '12 de Novembro'},
+'opcoes': {'A': '25 de Janeiro', 'B': '25 de Março', 'C': '9 de Julho', 'D': '12 de Novembro'},
 'correta': 'A'},
 {'titulo': 'Qual destas não é uma fruta?',
 'nivel': 'facil',
