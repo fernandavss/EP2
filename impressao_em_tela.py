@@ -57,9 +57,9 @@ while recomeco:
                 lista_sorteados.append(questao)
 
                 if id == 4:
-                    input('{0}Parabéns! Você atingiu o nível {1}MÉDIO{2}!\nClique ENTER para continuar...\n\n\n'.format('\033[1;32m','\033[m','\033[1;32m'))
+                    input('{0}Parabéns! Você atingiu o nível MÉDIO{1}!\nClique ENTER para continuar...\n\n\n'.format('\033[1;32m','\033[m'))
                 if id == 7:
-                    input('{0}Parabéns! Você atingiu o nível {1}DIFÍCIL{2}!\nClique ENTER para continuar...\n\n\n'.format('\033[1;32m','\033[m','\033[1;32m'))
+                    input('{0}Parabéns! Você atingiu o nível DIFÍCIL!{1}\nClique ENTER para continuar...\n\n\n'.format('\033[1;32m','\033[m'))
                 
                 
                 #GERANDO QUESTÃO ATUAL
@@ -70,7 +70,7 @@ while recomeco:
                 
                 #correto
                 if resposta_perg == questao['correta']:
-                    print('{0}Você acertou! Seu prêmio é de R${1}.{2}'.format('\033[1;35m',premios[id-1],'\033[m'))
+                    print('{0}Você acertou! Seu prêmio é de R${1}.{2}'.format('\033[1;32m',premios[id-1],'\033[m'))
                     input('Aperte ENTER para continuar...\n\n\n')
                     id += 1
 
@@ -84,7 +84,7 @@ while recomeco:
                                 print('ok! Lá vem ajuda! ATENÇÃO: você tem direito a mais uma ajuda')
                                 ajudas-=1
                             elif ajudas == 1:
-                                print('ok! Lá vem ajuda! ATENÇÃO: você {0}NÃO{1} tem direito a mais ajuda'.format('\033[1;32m','\033[m'))
+                                print('ok! Lá vem ajuda! ATENÇÃO: você {0}NÃO{1} tem direito a mais ajuda'.format('\033[1;31m','\033[m'))
                                 x=1
                                 ajudas -= 1
                             input('Aperte ENTER para continuar...')
@@ -93,7 +93,7 @@ while recomeco:
                             print(X)
                             resposta_pergunta = input('resposta:')
                             if resposta_pergunta == questao['correta']:
-                                print('{0}Você acertou! Seu prêmio é de R${1}.{2}'.format('\033[1;35m',premios[id-1],'\033[m'))
+                                print('{0}Você acertou! Seu prêmio é de R${1}.{2}'.format('\033[1;32m',premios[id-1],'\033[m'))
                                 id +=1
                                 break
                             elif resposta_pergunta in alternativas:
@@ -104,7 +104,7 @@ while recomeco:
                                     jogando = False
                                     recomeco = True
                                 elif cont == 'N':
-                                    print('{0}FIM DO JOGO{1}'.format('\033[1;32m','\033[m'))
+                                    print('{0}FIM DO JOGO{1}'.format('\033[1;31m','\033[m'))
                                     jogando = False
                                     recomeco = False
                             elif resposta_pergunta == 'pula':
@@ -113,7 +113,7 @@ while recomeco:
                                     pula += 1
                                     break
                                 elif pula == 2:
-                                    input('Ok, pulando! ATENÇÃO: você {0}NÃO{1} tem mais direito a pulos!\nAperte ENTER para continuar...\n\n\n'.format('\033[1;32m','\033[m'))
+                                    input('Ok, pulando! ATENÇÃO: você {0}NÃO{1} tem mais direito a pulos!\nAperte ENTER para continuar...\n\n\n'.format('\033[1;31m','\033[m'))
                                     pula += 1
                                     break
                                 else:
@@ -122,12 +122,12 @@ while recomeco:
                                         print(X)
                         
                         while ajudas == 0 and  x==0:
-                            print('voce {0}NÃO{1} tem direito a mais ajudas'.format('\033[1;33m','\033[m'))
+                            print('voce {0}NÃO{1} tem direito a mais ajudas'.format('\033[1;31m','\033[m'))
                             input('Aperte ENTER para continuar...\n\n\n')
                             print(X)
                             resposta_pergunta = input('resposta:')
                             if resposta_pergunta == questao['correta']:
-                                print('{0}Você acertou! Seu prêmio é de R${1}.{2}'.format('\033[1;35m',premios[id-1]),'\033[m')
+                                print('{0}Você acertou! Seu prêmio é de R${1}.{2}'.format('\033[1;32m',premios[id-1]),'\033[m')
                                 id +=1
                                 break
                             elif resposta_pergunta in alternativas:
@@ -170,7 +170,7 @@ while recomeco:
                                 print(X)
                                 resposta_perg = str(input('resposta: '))
                             if resposta_perg == questao['correta']:
-                                print('{0}Você acertou! Seu prêmio é de R${1}.{2}'.format('\033[1;35m',premios[id-1],'\033[m'))
+                                print('{0}Você acertou! Seu prêmio é de R${1}.{2}'.format('\033[1;32m',premios[id-1],'\033[m'))
                                 id += 1
                             elif resposta_perg in alternativas and resposta_perg != questao['correta']:
                                 print('perdeu tudo :(')
@@ -201,7 +201,7 @@ while recomeco:
                                     print(X)
                                     resposta_pergunta = input('resposta:')
                                     if resposta_pergunta == questao['correta']:
-                                        print('{0}Você acertou! Seu prêmio é de R${1}.{2}'.format('\033[1;35m',premios[id-1],'\033[m'))
+                                        print('{0}Você acertou! Seu prêmio é de R${1}.{2}'.format('\033[1;32m',premios[id-1],'\033[m'))
                                         id +=1
                                         break
                                     elif resposta_pergunta in alternativas:
@@ -238,7 +238,7 @@ while recomeco:
 
 
                         if resposta_perg == questao['correta']:
-                            print('{0}Você acertou! Seu prêmio é de R${1}.{2}'.format('\033[1;35m',premios[id-1],'\033[m'))
+                            print('{0}Você acertou! Seu prêmio é de R${1}.{2}'.format('\033[1;32m',premios[id-1],'\033[m'))
                             id+=1
 
 
@@ -269,7 +269,7 @@ while recomeco:
                                         print(X)
                                         resposta_perg = str(input('resposta: '))
                                     if resposta_perg == questao['correta']:
-                                        print('{0}Você acertou! Seu prêmio é de R${1}.{2}'.format('\033[1;35m',premios[id-1],'\033[m'))
+                                        print('{0}Você acertou! Seu prêmio é de R${1}.{2}'.format('\033[1;32m',premios[id-1],'\033[m'))
                                         id += 1
                                     elif resposta_perg in alternativas and resposta_perg != questao['correta']:
                                         print('perdeu tudo :(')
@@ -304,7 +304,7 @@ while recomeco:
                                     print(X)
                                     resposta_pergunta = input('resposta:')
                                     if resposta_pergunta == questao['correta']:
-                                        print('{0}Você acertou! Seu prêmio é de R${1}.{2}'.format('\033[1;35m',premios[id-1],'\033[m'))
+                                        print('{0}Você acertou! Seu prêmio é de R${1}.{2}'.format('\033[1;32m',premios[id-1],'\033[m'))
                                         id +=1
                                         break
                                     elif resposta_pergunta in alternativas:
@@ -331,7 +331,7 @@ while recomeco:
                                                 print(X)
                                                 resposta_perg = str(input('resposta: '))
                                             if resposta_perg == questao['correta']:
-                                                print('{0}Você acertou! Seu prêmio é de R${1}.{2}'.format('\033[1;35m',premios[id-1],'\033[m'))
+                                                print('{0}Você acertou! Seu prêmio é de R${1}.{2}'.format('\033[1;32m',premios[id-1],'\033[m'))
                                                 id += 1
                                             elif resposta_perg in alternativas and resposta_perg != questao['correta']:
                                                 print('perdeu tudo :(')
