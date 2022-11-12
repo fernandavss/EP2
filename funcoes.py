@@ -140,7 +140,7 @@ from lista_premio import *
 
 # style: {'0':'sem estilo', '1':'negrito', '4':'sublinhado', '7':'inverter fundo com tela'}
 # text: [30,37] = sequencia igual background
-# background: [40,47] = [branco,vermelho, amarelo, azul, azul, magenta, ciano, ciano, cinza]
+# background: [40,47] = [branco,vermelho, amarelo, azul, azul, magenta(VERDE), ciano, ciano, cinza]
 
 #sequencia no format: \033[style;text;back m
 
