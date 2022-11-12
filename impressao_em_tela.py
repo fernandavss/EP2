@@ -36,7 +36,6 @@ recomeco = True
 while recomeco:
 
     if soma == len(questoes_p):
-        print('c')
 
         lista_sorteados = []
         #Passo 2: Separando-as por nível em um dicionário (t_1)
@@ -94,9 +93,6 @@ while recomeco:
                                 print('perdeu tudo :( ) ')
                                 cont = input('quer continuar jogando [S/N]?')
                                 if cont == 'S':
-                                    id = 1
-                                    erro = 0
-                                    pula = 0 
                                     ajudas = -1
                                     jogando = False
                                     recomeco = True
@@ -129,9 +125,6 @@ while recomeco:
                                 print('perdeu tudo :( ) ')
                                 cont = input('quer continuar jogando [S/N]?')
                                 if cont == 'S':
-                                    id = 1
-                                    erro = 0
-                                    pula = 0 
                                     ajudas = -1
                                     jogando = False
                                     recomeco = True
@@ -172,9 +165,6 @@ while recomeco:
                                 print('perdeu tudo :( ) ')
                                 cont = input('quer continuar jogando [S/N]?')
                                 if cont == 'S':
-                                    id = 1
-                                    erro = 0
-                                    pula = 0 
                                     ajudas = -1
                                     jogando = False
                                     recomeco = True
@@ -205,9 +195,6 @@ while recomeco:
                                         print('perdeu tudo :( ) ')
                                         cont = input('quer continuar jogando [S/N]?')
                                         if cont == 'S':
-                                            id = 1
-                                            erro = 0
-                                            pula = 0 
                                             ajudas = -1
                                             jogando = False
                                             recomeco = True
@@ -219,9 +206,6 @@ while recomeco:
                         print('perdeu tudo :( ) ')
                         cont = input('quer continuar jogando [S/N]?')
                         if cont == 'S':
-                            id = 1
-                            erro = 0
-                            pula = 0 
                             ajudas = -1
                             jogando = False
                             recomeco = True
@@ -239,9 +223,6 @@ while recomeco:
                             print('perdeu tudo :( ) ')
                             cont = input('quer continuar jogando [S/N]?')
                             if cont == 'S':
-                                id = 1
-                                erro = 0
-                                pula = 0 
                                 ajudas = -1
                                 jogando = False
                                 recomeco = True
@@ -258,9 +239,6 @@ while recomeco:
                                 print('perdeu tudo :( ) ')
                                 cont = input('quer continuar jogando [S/N]?')
                                 if cont == 'S':
-                                    id = 1
-                                    erro = 0
-                                    pula = 0 
                                     ajudas = -1
                                     jogando = False
                                     recomeco = True
@@ -287,9 +265,6 @@ while recomeco:
                                         print('perdeu tudo :( ) ')
                                         cont = input('quer continuar jogando [S/N]?')
                                         if cont == 'S':
-                                            id = 1
-                                            erro = 0
-                                            pula = 0 
                                             ajudas = -1
                                             jogando = False
                                             recomeco = True
@@ -317,9 +292,6 @@ while recomeco:
                                         print('perdeu tudo :( ) ')
                                         cont = input('quer continuar jogando [S/N]?')
                                         if cont == 'S':
-                                            id = 1
-                                            erro = 0
-                                            pula = 0 
                                             ajudas = -1
                                             jogando = False
                                             recomeco = True
