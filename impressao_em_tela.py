@@ -93,7 +93,7 @@ while recomeco:
                             print(X)
                             resposta_pergunta = input('resposta:')
                             if resposta_pergunta == questao['correta']:
-                                print('{0}Você acertou! Seu prêmio é de R${1}.{2}'.format('\033[1;32m',premios[id-1],'\033[m'))
+                                print('{0}Você acertou! Seu prêmio é de R${1}.{2}\n\n\n'.format('\033[1;32m',premios[id-1],'\033[m'))
                                 id +=1
                                 break
                             elif resposta_pergunta in alternativas:
