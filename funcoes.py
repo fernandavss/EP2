@@ -149,3 +149,49 @@ from lista_premio import *
 #print('{}Olá,Mundo{}, tudo bem,{} como anda?'.format('\033[1;34m','\033[1;37m', '\033[m'))
 
 # fim
+ajudas = 2
+resposta_perg = 'ajuda'
+
+def ajuda(questao['correta']):
+    lista = ['ajuda', 'parar', 'pular', 'A', 'B', 'C', 'D']
+    alternativas = ['A', 'B', 'C', 'D']
+    if ajudas == 2:
+        input('ok! Lá vem ajuda! ATENÇÃO: você tem direito a mais uma ajuda\nAperte ENTER para continuar...\n\n')
+        ajudas-=1
+        print(gera_ajuda(questao))
+    elif ajudas == 1:
+        input('ok! Lá vem ajuda! ATENÇÃO: você {0}NÃO{1} tem direito a mais ajuda\nAperte ENTER para continuar...\n\n'.format('\033[1;31m','\033[m'))
+        ajudas -= 1
+        print(gera_ajuda(questao))
+    elif ajudas == 0:
+        input('voce {0}NÃO{1} tem direito a mais ajudas\nAperte ENTER para continuar...\n\n'.format('\033[1;31m','\033[m'))
+    
+    resposta_perg = input('resposta:')
+    
+    while resposta_perg not in lista:
+        print('Opção inválida!\n{0}ERRO RUDE{1}\nAs opções de resposta são: {2}A,B,C,D, ajuda, pula e sair{3}'.format('\033[1;31m','\033[m','\033[1;36m','\033[m'))
+        resposta_perg = input('resposta: ')
+    
+    if resposta_perg == 'ajuda':
+        if ajudas == 1:
+            input('ok! Lá vem ajuda! ATENÇÃO: você {0}NÃO{1} tem direito a mais ajuda\nAperte ENTER para continuar...\n\n'.format('\033[1;31m','\033[m'))
+            ajudas -= 1
+            print(gera_ajuda(questao))
+            resposta_perg = input('resposta: ')
+            if resposta_perg == 'ajuda':
+                input('voce {0}NÃO{1} tem direito a mais ajudas\nAperte ENTER para continuar...\n\n'.format('\033[1;31m','\033[m'))
+                while resposta_perg not in ['parar', 'pular', 'A', 'B', 'C', 'D']:
+                    print('Opção inválida!\n{0}ERRO RUDE{1}\nAs opções de resposta são: {2}A,B,C,D, ajuda, pula e sair{3}'.format('\033[1;31m','\033[m','\033[1;36m','\033[m'))
+                    resposta_perg = input('resposta: ')
+        elif ajudas == 0:
+            input('voce {0}NÃO{1} tem direito a mais ajudas\nAperte ENTER para continuar...\n\n'.format('\033[1;31m','\033[m'))
+            while resposta_perg not in ['parar', 'pular', 'A', 'B', 'C', 'D']:
+                print('Opção inválida!\n{0}ERRO RUDE{1}\nAs opções de resposta são: {2}A,B,C,D, ajuda, pula e sair{3}'.format('\033[1;31m','\033[m','\033[1;36m','\033[m'))
+                resposta_perg = input('resposta: ')
+    
+    elif resposta_perg == 'parar':
+        print('{0}FIM DE JOGO{1}. Você sai com R${2}'.format('\033[1;31m','\033[m',premios[id-2]))
+    elif resposta_perg == questao['correta']:
+            print('{0}Você acertou! Seu prêmio é de R${1}.{2}'.format('\033[1;32m',premios[id-1]),'\033[m'')
+            id += 1
+            return 
