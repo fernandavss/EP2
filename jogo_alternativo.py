@@ -40,7 +40,6 @@ while recomeco:
         id = 1
         ajudas = 2
         pula = 0
-        x=1
 
         #loop de rodadas
         while jogando:
@@ -88,7 +87,6 @@ while recomeco:
                             ajudas-=1
                         elif ajudas == 1:
                             print('ok! Lá vem ajuda! ATENÇÃO: você {0}NÃO{1} tem direito a mais ajuda'.format('\033[1;31m','\033[m'))
-                            x=1
                             ajudas -= 1
                         input('Aperte ENTER para continuar...')
                         print(gera_ajuda(questao))
@@ -128,7 +126,7 @@ while recomeco:
 
                         elif resposta_pergunta == 'ajuda': 
                             if ajudas == 0:
-                                while ajudas == 0 and  x==0:
+                                while ajudas == 0:
                                     print('voce {0}NÃO{1} tem direito a mais ajudas'.format('\033[1;31m','\033[m'))
                                     input('Aperte ENTER para continuar...\n\n\n')
                                     print(X)
@@ -201,7 +199,7 @@ while recomeco:
 
 
 
-                    while ajudas == 0 and  x==0:
+                    while ajudas == 0:
                         print('voce {0}NÃO{1} tem direito a mais ajudas'.format('\033[1;31m','\033[m'))
                         input('Aperte ENTER para continuar...\n\n\n')
                         print(X)
