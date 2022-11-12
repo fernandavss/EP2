@@ -57,10 +57,15 @@ while recomeco:
                 lista_sorteados.append(questao)
 
                 if id == 4:
-                    input('{0}Parabéns! Você atingiu o nível {1}MÉDIO{2}!\nClique ENTER para continuar...\n\n\n'.format('\033[1;31m','\033[1;31m','\033[1;31m'))
+                    input('{0}Parabéns! Você atingiu o nível {1}MÉDIO{2}!\nClique ENTER para continuar...\n\n\n'.format('\033[1;32m','\033[m','\033[1;32m'))
+                if id == 7:
+                    input('{0}Parabéns! Você atingiu o nível {1}DIFÍCIL{2}!\nClique ENTER para continuar...\n\n\n'.format('\033[1;32m','\033[m','\033[1;32m'))
+                
+                
+                #GERANDO QUESTÃO ATUAL
                 X = questao_para_texto(questao, id)
                 print(X)
-
+    
                 resposta_perg = str(input('resposta: '))
                 
                 #correto
