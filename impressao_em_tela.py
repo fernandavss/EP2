@@ -29,8 +29,6 @@ soma = 0
 for dicio_de_erro in p_1:
     if dicio_de_erro == {}:
         soma += 1
-print(soma)
-print(len(questoes))
 
 recomeco = True
 while recomeco:
