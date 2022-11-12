@@ -100,6 +100,7 @@ while recomeco:
                                     recomeco = True
                                 elif cont == 'N':
                                     jogando = False
+                                    recomeco = False
                             elif resposta_pergunta == 'pula':
                                 if pula in [0,1]:
                                     input('Ok, pulando! Você ainda tem {0} pulos!\nAperte ENTER para continuar...'.format(2 - pula))
@@ -132,6 +133,7 @@ while recomeco:
                                     recomeco = True
                                 elif cont == 'N':
                                     jogando = False
+                                    recomeco = False
                                 erro +=1
                             elif resposta_pergunta == 'ajuda':
                                 print('nao')
@@ -170,6 +172,7 @@ while recomeco:
                                     recomeco = True
                                 elif cont == 'N':
                                     jogando = False
+                                    recomeco = False
                             elif resposta_perg == 'parar':
                                 print('saindo...')
                                 break
@@ -200,6 +203,7 @@ while recomeco:
                                             recomeco = True
                                         elif cont == 'N':
                                             jogando = False
+                                            recomeco = False
 
                     #errado
                     elif resposta_perg in alternativas:
@@ -211,6 +215,7 @@ while recomeco:
                             recomeco = True
                         elif cont == 'N':
                             jogando = False
+                            recomeco = False
                     
 
 
@@ -234,6 +239,7 @@ while recomeco:
                                 recomeco = True
                             elif cont == 'N':
                                 jogando = False
+                                recomeco = False
                         
 
 
@@ -261,6 +267,7 @@ while recomeco:
                                             recomeco = True
                                         elif cont == 'N':
                                             jogando = False
+                                            recomeco = False
 
 
                         elif resposta_perg == 'parar':
@@ -295,6 +302,7 @@ while recomeco:
                                             recomeco = True
                                         elif cont == 'N':
                                             jogando = False
+                                            recomeco = False
                                     elif resposta_pergunta == 'pula':
                                         if pula in [0,1]:
                                             input('Ok, pulando! Você ainda tem {0} pulos!\nAperte ENTER para continuar...'.format(2 - pula))
@@ -319,6 +327,7 @@ while recomeco:
                                                     recomeco = True
                                                 elif cont == 'N':
                                                     jogando = False
+                                                    recomeco = False
 
                     
 
@@ -343,6 +352,7 @@ while recomeco:
                                     recomeco = True
                                 elif cont == 'N':
                                     jogando = False
+                                    recomeco = False
                                 elif resposta_pergunta == 'pula':
                                     if pula in [0,1]:
                                         input('Ok, pulando! Você ainda tem {0} pulos!\nAperte ENTER para continuar...'.format(2 - pula))
@@ -367,6 +377,7 @@ while recomeco:
                                                 recomeco = True
                                             elif cont == 'N':
                                                 jogando = False
+                                                recomeco = False
                             elif resposta_perg == 'parar':
                                 print('saindo...')
                                 break
@@ -396,6 +407,7 @@ while recomeco:
                                             recomeco = True
                                         elif cont == 'N':
                                             jogando = False
+                                            recomeco = False
                                     elif resposta_pergunta == 'pula':
                                         if pula in [0,1]:
                                             input('Ok, pulando! Você ainda tem {0} pulos!\nAperte ENTER para continuar...'.format(2 - pula))
@@ -420,6 +432,7 @@ while recomeco:
                                                     recomeco = True
                                                 elif cont == 'N':
                                                     jogando = False
+                                                    recomeco = False
                                     elif resposta_perg == 'parar':
                                         print('saindo...')
                                         break
