@@ -21,23 +21,23 @@ input('Aperte ENTER para continuar...\n')
 input('Para a primeira questão, vamos começar com o nivel {0}FÁCIL{1}!\n\nAperte ENTER para continuar...\n\n'.format('\033[0;35m','\033[m'))
 
 
-#Passo 1: Checando validade da lista de questões
-p_1 = valida_questoes(questoes_p)
-
-soma = 0
-
-for dicio_de_erro in p_1:
+#Checando validade da lista de questões
+erros = valida_questoes(questoes_p)
+questoes_validas = 0
+for dicio_de_erro in erros:
     if dicio_de_erro == {}:
-        soma += 1
+        questoes_validas += 1
+
 
 recomeco = True
 while recomeco:
 
-    if soma == len(questoes_p):
+    if questoes_validas == len(questoes_p):
 
+        #Questões já sorteadas entram aqui
         lista_sorteados = []
-        #Passo 2: Separando-as por nível em um dicionário (t_1)
 
+        #Contadores
         jogando = True
         id = 1
         erro = 0
@@ -45,6 +45,7 @@ while recomeco:
         pula = 0
         x=1
 
+        #Rodadas
         while jogando:
 
             nivel = relacao_id_nivel[id]
