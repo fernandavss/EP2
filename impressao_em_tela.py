@@ -12,9 +12,9 @@ print("Eai!\n\nVocê está no Fortuna FeCami e vai ter a oportunidade de milhõe
 
 #Primeira interação
 
-nome_jogador = input('Qual o seu nome?:\n')
+nome_jogador = input('Qual o seu nome?:')
 
-print('Blz, {0}, você tem direito a {1}pular 3 vezes e a 2 ajudas{2}\nSuas opções de resposta são {3}"A", "B", "C", "D", "ajuda", "pula" e "parar".{4}\n'.format(nome_jogador,'\033[0;35m','\033[m','\033[1;36m','\033[m'))
+print('\nBlz, {0}, você tem direito a {1}pular 3 vezes e a 2 ajudas{2}\nSuas opções de resposta são {3}"A", "B", "C", "D", "ajuda", "pula" e "parar".{4}\n'.format(nome_jogador,'\033[0;35m','\033[m','\033[1;36m','\033[m'))
 
 input('Aperte ENTER para continuar...\n')
 
