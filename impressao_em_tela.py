@@ -92,7 +92,7 @@ while recomeco:
                                 id +=1
                                 break
                             elif resposta_pergunta in alternativas:
-                                print('perdeu tudo :( ) ')
+                                print('perdeu tudo :(')
                                 cont = input('quer continuar jogando [S/N]?')
                                 if cont == 'S':
                                     ajudas = -1
