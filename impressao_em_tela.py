@@ -29,14 +29,13 @@ soma = 0
 for dicio_de_erro in p_1:
     if dicio_de_erro == {}:
         soma += 1
-print(soma)
-print(len(questoes))
+
 if soma == len(questoes_p):
-    print('c')
 
+    #Passo 2: Criando rodadas
+
+    #Parâmetros
     lista_sorteados = []
-    #Passo 2: Separando-as por nível em um dicionário (t_1)
-
     jogando = True
     id = 1
     erro = 0
