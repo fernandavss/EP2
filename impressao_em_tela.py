@@ -366,7 +366,8 @@ while recomeco:
 
                         elif resposta_perg == 'parar':
                             print('{0}FIM DO JOGO{1}'.format('\033[1;31m','\033[m'))
-                            break
+                            recomeco = False
+                            break 
 
 
 
