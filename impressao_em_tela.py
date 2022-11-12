@@ -226,7 +226,7 @@ while recomeco:
 
 
                         elif resposta_perg in alternativas:
-                            print('perdeu tudo :( ) ')
+                            print('perdeu tudo :(')
                             cont = input('quer continuar jogando [S/N]?')
                             if cont == 'S':
                                 ajudas = -1
