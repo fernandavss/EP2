@@ -12,13 +12,13 @@ print("Eai!\n\nVocê está no Fortuna FeCami e vai ter a oportunidade de milhõe
 
 #Primeira interação
 
-nome_jogador = input('Qual o seu nome?:')
+nome_jogador = input('Qual o seu nome?:\n')
 
 print('Blz, {0}, você tem direito a {1}pular 3 vezes e a 2 ajudas{2}\nSuas opções de resposta são {3}"A", "B", "C", "D", "ajuda", "pula" e "parar".{4}\n'.format(nome_jogador,'\033[0;35m','\033[m','\033[1;36m','\033[m'))
 
 input('Aperte ENTER para continuar...\n')
 
-input('Para a primeira questão, vamos começar com o nivel {0}FÁCIL{1}!\nAperte ENTER para continuar...\n\n'.format('\033[0;35m','\033[m'))
+input('Para a primeira questão, vamos começar com o nivel {0}FÁCIL{1}!\n\nAperte ENTER para continuar...\n\n'.format('\033[0;35m','\033[m'))
 
 
 #Passo 1: Checando validade da lista de questões
