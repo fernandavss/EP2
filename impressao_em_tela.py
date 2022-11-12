@@ -2,15 +2,13 @@ from funcoes import *
 from questoes_prof import *
 from questoes_passadas import questoes
 
-
+#Desterminando o nivel da questão
 relacao_id_nivel = {1:'facil',2:'facil',3:'facil',4:'medio',5:'medio',6:'medio',7:'dificil',8:'dificil',9:'dificil'}
 alternativas = ['A','B','C','D']
 
+
 #Apresentação do jogo
-
 print("Eai!\n\nVocê está no Fortuna FeCami e vai ter a oportunidade de milhões! Responda às seguintes perguntas e concorra a um prêmio de 1 milhão de reais!!\n")
-
-#Primeira interação
 
 nome_jogador = input('Qual o seu nome?:')
 
@@ -21,6 +19,7 @@ input('Aperte ENTER para continuar...\n')
 input('Para a primeira questão, vamos começar com o nivel {0}FÁCIL{1}!\n\nAperte ENTER para continuar...\n\n'.format('\033[0;35m','\033[m'))
 
 
+#Iniciando jogo
 #Checando validade da lista de questões
 erros = valida_questoes(questoes_p)
 questoes_validas = 0
@@ -28,14 +27,13 @@ for dicio_de_erro in erros:
     if dicio_de_erro == {}:
         questoes_validas += 1
 
-
+#loop de reiniciando jogo
 recomeco = True
 while recomeco:
 
-    if questoes_validas == len(questoes_p):
+    if questoes_validas == len(questoes_p):       #Se toda a base está válida, o jogo roda
 
-        #Questões já sorteadas entram aqui
-        lista_sorteados = []
+        lista_sorteados = []                      #Questões já sorteadas entram aqui
 
         #Contadores
         jogando = True
@@ -45,9 +43,10 @@ while recomeco:
         pula = 0
         x=1
 
-        #Rodadas
+        #loop de rodadas
         while jogando:
 
+            #Nível da questão
             nivel = relacao_id_nivel[id]
 
 
