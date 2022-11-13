@@ -100,7 +100,7 @@ while recomeco:
                             input('Aperte ENTER para continuar...\n\n')
                             print(X)
                             resposta_pergunta = input('resposta:')
-                            #CAMINHOS DE RESPOSTA SEGUINTE A UMA AJUDA
+                            #CAMINHOS DE RESPOSTA SEGUINTEs A UMA AJUDA
                             #CORRETA
                             if resposta_pergunta == questao['correta']:
                                 print('{0}Você acertou! Seu prêmio é de R${1}.{2}'.format('\033[1;32m',premios[id-1],'\033[m'))
