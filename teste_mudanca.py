@@ -220,9 +220,7 @@ while recomeco:
                                                 input('{0}Não deu! Você NÃO tem mais direito a pulos!{1}\nAperte ENTER para continuar...\n\n\n'.format('\033[1;31m','\033[m'))
                                                 print(X)
                                                 resposta_perg = input('resposta:')
-                                    #PARAR
-                                    elif
-                                        
+                                       
                                  
                         while ajudas == 0 and  x==0:
                             print('voce {0}NÃO{1} tem direito a mais ajudas'.format('\033[1;31m','\033[m'))
