@@ -138,7 +138,7 @@ while recomeco:
                             elif resposta_pergunta == 'ajuda':
                                 #NÃO TEM MAIS AJUDA
                                 if ajudas == 0:
-                                    while ajudas == 0 and  x==0:                #REVER X
+                                    while resposta_pergunta == 'ajuda':      
                                         print('voce {0}NÃO{1} tem direito a mais ajudas'.format('\033[1;31m','\033[m'))
                                         input('Aperte ENTER para continuar...\n\n\n')
                                         print(X)
@@ -162,19 +162,27 @@ while recomeco:
                                                 jogando = False
                                                 recomeco = False
                                             erro +=1
-                                        #AJUDA
-                                        elif resposta_pergunta == 'ajuda':
-                                            print('nao')
-                                            id += 1
+                                            break
                                         #PULA
                                         elif resposta_pergunta == 'pula':
-                                            print('nao')
-                                            id += 1
+                                            if pula in [0,1]:
+                                                input('Ok, pulando! Você ainda tem {0} pulos!\nAperte ENTER para continuar...\n\n\n'.format(2 - pula))
+                                                pula += 1
+                                                break
+                                            elif pula == 2:
+                                                input('Ok, pulando! ATENÇÃO: você {0}NÃO{1} tem mais direito a pulos!\nAperte ENTER para continuar...\n\n\n'.format('\033[1;31m','\033[m'))
+                                                pula += 1
+                                                break
+                                            else:
+                                                while resposta_pergunta == 'pula':
+                                                    input('{0}Não deu! Você NÃO tem mais direito a pulos!{1}\nAperte ENTER para continuar...\n\n\n'.format('\033[1;31m','\033[m'))
+                                                    print(X)
+                                                    resposta_pergunta = input('resposta:')
+                                                break
                                 #TEM UMA AJUDA
                                 elif ajudas == 1:
-                                    print('ok! Lá vem ajuda! ATENÇÃO: você {0}NÃO{1} tem direito a mais ajuda'.format('\033[1;31m','\033[m'))
+                                    input('ok! Lá vem ajuda! ATENÇÃO: você {0}NÃO{1} tem direito a mais ajuda\nAperte ENTER para continuar...'.format('\033[1;31m','\033[m'))
                                     ajudas -= 1
-                                    input('Aperte ENTER para continuar...')
                                     print(gera_ajuda(questao))
                                     input('Aperte ENTER para continuar...\n\n')
                                     print(X)
@@ -212,6 +220,9 @@ while recomeco:
                                                 input('{0}Não deu! Você NÃO tem mais direito a pulos!{1}\nAperte ENTER para continuar...\n\n\n'.format('\033[1;31m','\033[m'))
                                                 print(X)
                                                 resposta_perg = input('resposta:')
+                                    #PARAR
+                                    elif
+                                        
                                  
                         while ajudas == 0 and  x==0:
                             print('voce {0}NÃO{1} tem direito a mais ajudas'.format('\033[1;31m','\033[m'))
