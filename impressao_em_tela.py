@@ -344,7 +344,7 @@ while recomeco:
 
                     #outro (resposta aleatoria)
                     else:
-                        print('Opção inválida!\n{0}ERROU RUDE{1}\nAs opções de resposta são: {2}A,B,C,D, ajuda, pula e sair{3}'.format('\033[1;31m','\033[m','\033[1;36m','\033[m'))
+                        print('Opção inválida!\n{0}ERROU RUDE{1}\nAs opções de resposta são: {2}A,B,C,D, ajuda, pula e parar{3}'.format('\033[1;31m','\033[m','\033[1;36m','\033[m'))
                         resposta_perg = input('resposta:')
 
 
@@ -398,7 +398,9 @@ while recomeco:
                         elif resposta_perg == 'parar':
                             if id ==1:
                                 print('{0}FIM DO JOGO\nVocê sai com nada!{1}'.format('\033[1;31m','\033[m'))
-                            print('{0}FIM DO JOGO{1}\nVocê sai com {2}'.format('\033[1;31m','\033[m',premios[id-2]))
+
+                            else:
+                                print('{0}FIM DO JOGO{1}\nVocê sai com {2}'.format('\033[1;31m','\033[m',premios[id-2]))
                             recomeco = False
                             break 
 
