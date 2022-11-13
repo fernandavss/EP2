@@ -390,7 +390,9 @@ while recomeco:
                         elif resposta_perg == 'parar':
                             if id ==1:
                                 print('{0}FIM DO JOGO\nVocê sai com nada!{1}'.format('\033[1;31m','\033[m'))
-                            print('{0}FIM DO JOGO{1}\nVocê sai com {2}'.format('\033[1;31m','\033[m',premios[id-2]))
+
+                            else:
+                                print('{0}FIM DO JOGO{1}\nVocê sai com {2}'.format('\033[1;31m','\033[m',premios[id-2]))
                             recomeco = False
                             break 
 
