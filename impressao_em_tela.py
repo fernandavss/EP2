@@ -41,6 +41,7 @@ while recomeco:
         erro = 0
         ajudas = 2
         pula = 0
+        x=1
 
         #rodadas
         while jogando:
@@ -92,6 +93,7 @@ while recomeco:
                                 ajudas-=1
                             elif ajudas == 1:
                                 print('ok! Lá vem ajuda! ATENÇÃO: você {0}NÃO{1} tem direito a mais ajuda'.format('\033[1;31m','\033[m'))
+                                x=1
                                 ajudas -= 1
                             #RETORNA À PERGUNTA
                             input('Aperte ENTER para continuar...')
@@ -210,8 +212,8 @@ while recomeco:
                                                 input('{0}Não deu! Você NÃO tem mais direito a pulos!{1}\nAperte ENTER para continuar...\n\n\n'.format('\033[1;31m','\033[m'))
                                                 print(X)
                                                 resposta_perg = input('resposta:')
-                        #NÃO TEM AJUDA
-                        while ajudas == 0:
+                                 
+                        while ajudas == 0 and  x==0:
                             print('voce {0}NÃO{1} tem direito a mais ajudas'.format('\033[1;31m','\033[m'))
                             input('Aperte ENTER para continuar...\n\n\n')
                             print(X)
